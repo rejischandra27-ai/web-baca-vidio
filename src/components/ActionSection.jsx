@@ -1,13 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Play, Music, Sparkles, CheckCircle } from 'lucide-react';
+import { Play, Music, Sparkles, CheckCircle, Video, Clock, User } from 'lucide-react';
 import { soundFx } from '../utils/sound';
+import { videosData } from '../data/videosData';
 
 export default function ActionSection({ onOpenVideoModal }) {
+  const [selectedVideoId, setSelectedVideoId] = useState("pantai");
+
+  const activeVideo = videosData.find(v => v.id === selectedVideoId) || videosData[0];
+
+  const handlePlayVideo = (id) => {
+    soundFx.playChime(700);
+    onOpenVideoModal(id);
+  };
+
   return (
     <section
       id="vidio"
-      className="relative py-28 px-6 overflow-hidden bg-[#f4f9f4] text-center"
+      className="relative py-28 px-4 sm:px-6 overflow-hidden bg-[#f4f9f4] text-center"
       style={{
         backgroundImage: `
           radial-gradient(ellipse at 50% 30%, rgba(200, 230, 201, 0.35) 0%, transparent 65%),
@@ -15,7 +25,7 @@ export default function ActionSection({ onOpenVideoModal }) {
         `,
       }}
     >
-      <div className="max-w-4xl mx-auto relative z-10 flex flex-col items-center">
+      <div className="max-w-6xl mx-auto relative z-10 flex flex-col items-center">
         
         {/* SECTION HEADLINE & SUBTITLE */}
         <motion.div
@@ -23,56 +33,38 @@ export default function ActionSection({ onOpenVideoModal }) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
+          className="max-w-3xl mx-auto mb-10"
         >
-          <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#2e7d32]/10 border border-[#2e7d32]/20 text-xs font-bold uppercase tracking-wider text-[#2e7d32] mb-3">
-            <Music size={14} /> Vidio Animasi Lagu Anak
+          <div className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-[#2e7d32]/10 border border-[#2e7d32]/25 text-xs font-bold uppercase tracking-wider text-[#2e7d32] mb-3">
+            <Video size={14} /> Koleksi 4 Vidio Edukasi Sahabat Alam
           </div>
 
           <h2 className="font-storybook text-4xl sm:text-5xl font-bold text-[#0e2b17] tracking-tight">
-            Jangan Buang Sampah di Pantai.
+            Vidio Animasi & Praktik Aksi Hijau.
           </h2>
 
-          <p className="mt-2 text-base sm:text-lg font-semibold text-[#2e7d32] italic">
-            "Karya Hartati • Jaga Pantai & Laut untuk Bumi"
-          </p>
-
           <p className="mt-3 text-base sm:text-lg text-[#335e3d] font-normal max-w-xl mx-auto leading-relaxed">
-            Lagu animasi ceria yang mengajak anak-anak bernyanyi sambil belajar menjaga kebersihan pantai, memilah sampah plastik ke tempatnya, serta melindungi kehidupan ikan dan penyu di laut.
+            Tonton lagu animasi anak dan dokumentasi kegiatan mendongeng interaktif yang mengedukasi kepedulian lingkungan sejak usia dini.
           </p>
-
-          <div className="mt-4 flex flex-wrap items-center justify-center gap-2.5 text-xs text-[#1b4d24] font-semibold">
-            <span className="px-3 py-1 rounded-full bg-white/80 border border-[#c8e6c9] shadow-sm flex items-center gap-1.5">
-              <CheckCircle size={13} className="text-[#2e7d32]" /> Animasi 2D Full HD
-            </span>
-            <span className="px-3 py-1 rounded-full bg-white/80 border border-[#c8e6c9] shadow-sm flex items-center gap-1.5">
-              <CheckCircle size={13} className="text-[#2e7d32]" /> Edukasi Karakter Ramah Lingkungan
-            </span>
-            <span className="px-3 py-1 rounded-full bg-white/80 border border-[#c8e6c9] shadow-sm flex items-center gap-1.5">
-              <CheckCircle size={13} className="text-[#2e7d32]" /> Lagu & Musik Ceria
-            </span>
-          </div>
         </motion.div>
 
-        {/* REALISTIC TABLET MOCKUP SHOWING THE REAL ANIMATION POSTER */}
+        {/* 1. FEATURED TABLET MOCKUP FOR ACTIVE VIDEO */}
         <motion.div
           initial={{ opacity: 0.9, scale: 0.98, y: 10 }}
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1, ease: 'easeOut' }}
-          className="mt-10 relative cursor-pointer group w-full max-w-[580px]"
-          onClick={() => {
-            soundFx.playChime(700);
-            onOpenVideoModal();
-          }}
+          className="relative cursor-pointer group w-full max-w-[620px] mb-12"
+          onClick={() => handlePlayVideo(activeVideo.id)}
         >
           {/* Natural Soft Sunbeam Backdrop Glow */}
-          <div className="absolute -inset-6 bg-[#2e7d32]/20 rounded-[44px] blur-3xl opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div className="absolute -inset-6 bg-[#2e7d32]/20 rounded-[44px] blur-3xl opacity-75 group-hover:opacity-100 transition-opacity duration-300"></div>
 
           {/* Ambient Floor Shadow */}
-          <div className="absolute -bottom-6 left-10 right-10 h-8 bg-[#0e2b17]/35 rounded-[100%] blur-xl transform scale-y-60"></div>
+          <div className="absolute -bottom-6 left-12 right-12 h-8 bg-[#0e2b17]/35 rounded-[100%] blur-xl transform scale-y-60"></div>
 
           {/* Tablet Chassis */}
-          <div className="relative rounded-[32px] sm:rounded-[40px] bg-gradient-to-b from-[#243026] via-[#1a231d] to-[#121814] p-3 sm:p-4 shadow-[0_25px_60px_-15px_rgba(14,43,23,0.45),0_12px_28px_-5px_rgba(0,0,0,0.4)] border border-white/20 transition-transform duration-300 group-hover:scale-[1.015]">
+          <div className="relative rounded-[32px] sm:rounded-[42px] bg-gradient-to-b from-[#243026] via-[#1a231d] to-[#121814] p-3 sm:p-4 shadow-[0_25px_60px_-15px_rgba(14,43,23,0.45),0_12px_28px_-5px_rgba(0,0,0,0.4)] border border-white/20 transition-transform duration-300 group-hover:scale-[1.015]">
             
             {/* Tablet Camera */}
             <div className="absolute top-2 left-1/2 -translate-x-1/2 flex items-center gap-2 pointer-events-none z-20">
@@ -84,10 +76,10 @@ export default function ActionSection({ onOpenVideoModal }) {
             {/* Screen Glass */}
             <div className="relative aspect-video w-full rounded-[20px] sm:rounded-[26px] overflow-hidden bg-black shadow-inner">
               <img
-                src="/assets/videos/video-thumb-title.jpg"
-                alt="Vidio Animasi Jangan Buang Sampah di Pantai"
+                src={activeVideo.poster}
+                alt={activeVideo.judul}
                 className="w-full h-full object-cover object-center select-none block transition-transform duration-500 group-hover:scale-105"
-                loading="lazy"
+                loading="eager"
               />
 
               {/* Diagonal Glass Sheen */}
@@ -96,52 +88,115 @@ export default function ActionSection({ onOpenVideoModal }) {
               {/* INTERACTIVE PULSING PLAY BUTTON OVERLAY */}
               <div className="absolute inset-0 flex items-center justify-center bg-black/25 group-hover:bg-black/10 transition-colors">
                 <div className="relative flex items-center justify-center">
-                  {/* Expanding Ripple Ring */}
                   <span className="absolute w-20 h-20 rounded-full bg-[#2e7d32]/40 animate-ping"></span>
                   <span className="absolute w-24 h-24 rounded-full bg-[#2e7d32]/25 animate-pulse"></span>
 
-                  {/* Central Play Button */}
                   <div className="relative w-16 h-16 sm:w-18 sm:h-18 rounded-full bg-[#2e7d32] text-white flex items-center justify-center shadow-2xl group-hover:bg-[#1b5e20] group-hover:scale-110 transition-all duration-300 border-2 border-white/40">
                     <Play size={28} className="ml-1 fill-white" />
                   </div>
                 </div>
               </div>
 
-              {/* Status Overlay Badge */}
-              <div className="absolute bottom-3 left-3 bg-black/70 backdrop-blur-md text-white text-[11px] font-semibold px-3 py-1 rounded-full border border-white/20 flex items-center gap-1.5">
-                <span className="w-2 h-2 rounded-full bg-[#81c784] animate-pulse"></span>
-                <span>Animasi 1:55 Menit • Full Audio</span>
+              {/* Status Overlay Badges */}
+              <div className="absolute top-3 left-3 bg-[#2e7d32]/90 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full shadow-sm">
+                {activeVideo.badge}
               </div>
 
-              {/* Hover Tooltip */}
+              <div className="absolute bottom-3 left-3 bg-black/75 backdrop-blur-md text-white text-[11px] font-semibold px-3.5 py-1 rounded-full border border-white/20 flex items-center gap-1.5">
+                <Clock size={12} className="text-[#81c784]" />
+                <span>{activeVideo.durasi}</span>
+                <span>•</span>
+                <span className="truncate max-w-[200px]">{activeVideo.pembuat}</span>
+              </div>
+
               <div className="absolute bottom-3 right-3 bg-[#0e2b17]/90 backdrop-blur-sm text-white text-[11px] font-medium px-3.5 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none whitespace-nowrap shadow-md border border-white/20">
-                ▶ Klik untuk Putar
+                ▶ Klik untuk Putar Vidio
               </div>
             </div>
           </div>
         </motion.div>
 
-        {/* WATCH PREVIEW CTA BUTTON */}
-        <motion.div
-          initial={{ opacity: 0.9, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
-          className="mt-8"
-        >
-          <motion.button
-            whileHover={{ scale: 1.04 }}
-            whileTap={{ scale: 0.97 }}
-            onClick={() => {
-              soundFx.playChime(700);
-              onOpenVideoModal();
-            }}
-            className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-[#2e7d32] hover:bg-[#1b5e20] text-white text-base font-semibold tracking-wide shadow-md shadow-[#2e7d32]/25 hover:shadow-lg transition-all duration-300 group cursor-pointer"
-          >
-            <Play size={18} className="fill-white" />
-            <span>Tonton Vidio Animasi (1:55)</span>
-          </motion.button>
-        </motion.div>
+        {/* 2. GALLERY OF ALL 4 VIDEOS (PLAYLIST CARDS) */}
+        <div className="w-full">
+          <div className="text-left mb-4 flex items-center justify-between">
+            <h3 className="font-storybook text-2xl font-bold text-[#0e2b17] flex items-center gap-2">
+              <span>Daftar 4 Vidio Edukasi</span>
+            </h3>
+            <span className="text-xs font-semibold text-[#2e7d32]">Pilih vidio untuk ditonton</span>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 text-left">
+            {videosData.map((v) => (
+              <div
+                key={v.id}
+                onClick={() => {
+                  setSelectedVideoId(v.id);
+                  handlePlayVideo(v.id);
+                }}
+                className={`bg-white rounded-2xl p-3.5 shadow-md border-2 transition-all duration-300 cursor-pointer flex flex-col justify-between group hover:-translate-y-1 hover:shadow-xl ${
+                  selectedVideoId === v.id
+                    ? 'border-[#2e7d32] ring-2 ring-[#81c784]/30'
+                    : 'border-slate-100 hover:border-[#81c784]/60'
+                }`}
+              >
+                <div>
+                  {/* Thumbnail */}
+                  <div className="relative aspect-video rounded-xl overflow-hidden bg-black mb-3">
+                    <img
+                      src={v.poster}
+                      alt={v.judul}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    
+                    {/* Duration badge */}
+                    <div className="absolute bottom-2 right-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded-md backdrop-blur-sm">
+                      {v.durasi}
+                    </div>
+
+                    {/* Category badge */}
+                    <div className="absolute top-2 left-2 bg-[#2e7d32]/90 text-white text-[10px] font-bold px-2 py-0.5 rounded-full backdrop-blur-sm">
+                      {v.badge}
+                    </div>
+
+                    {/* Hover play icon */}
+                    <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                      <div className="w-10 h-10 rounded-full bg-[#2e7d32] text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform">
+                        <Play size={16} className="ml-0.5 fill-white" />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Creator */}
+                  <div className="flex items-center gap-1 text-[11px] font-semibold text-[#2e7d32] mb-1">
+                    <User size={12} />
+                    <span className="truncate">{v.pembuat}</span>
+                  </div>
+
+                  {/* Title */}
+                  <h4 className="font-semibold text-sm text-[#0e2b17] leading-snug line-clamp-2 group-hover:text-[#2e7d32] transition-colors">
+                    {v.judul}
+                  </h4>
+
+                  {/* Description */}
+                  <p className="text-xs text-[#526978] mt-1 line-clamp-2 leading-relaxed">
+                    {v.deskripsi}
+                  </p>
+                </div>
+
+                {/* Play Button */}
+                <div className="mt-3 pt-2.5 border-t border-slate-100">
+                  <button
+                    type="button"
+                    className="w-full py-2 rounded-xl bg-[#2e7d32]/10 hover:bg-[#2e7d32] text-[#2e7d32] hover:text-white text-xs font-bold transition-all duration-200 flex items-center justify-center gap-1.5 cursor-pointer"
+                  >
+                    <Play size={13} className="fill-current" />
+                    <span>Tonton Vidio</span>
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
 
       </div>
     </section>

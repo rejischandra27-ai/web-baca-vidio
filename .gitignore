@@ -29,5 +29,10 @@ dist-ssr
 # Heavy PDFs (Uploaded to GitHub Releases for fast CDN downloads)
 public/assets/books/*.pdf
 
+# Heavy Videos (Uploaded to GitHub Releases CDN for fast streaming)
+public/assets/videos/implementasi-detektif-sampah.mp4
+public/assets/videos/mendongeng-rara-dan-bimo.mp4
+public/assets/videos/mendongeng-rahasia-pohon-jambu.mp4
+
 
 .vercel

@@ -13,11 +13,17 @@ export default function App() {
   const [isStoryModalOpen, setIsStoryModalOpen] = useState(false);
   const [selectedBookId, setSelectedBookId] = useState("detektif-sampah");
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
+  const [selectedVideoId, setSelectedVideoId] = useState("pantai");
   const [isAppModalOpen, setIsAppModalOpen] = useState(false);
 
   const handleOpenBook = (bookId = "detektif-sampah") => {
     setSelectedBookId(bookId);
     setIsStoryModalOpen(true);
+  };
+
+  const handleOpenVideo = (videoId = "pantai") => {
+    setSelectedVideoId(videoId);
+    setIsVideoModalOpen(true);
   };
 
   return (
@@ -26,7 +32,7 @@ export default function App() {
       <Navbar
         onOpenAppModal={() => setIsAppModalOpen(true)}
         onOpenStoryModal={() => handleOpenBook("detektif-sampah")}
-        onOpenVideoModal={() => setIsVideoModalOpen(true)}
+        onOpenVideoModal={() => handleOpenVideo("pantai")}
       />
 
       {/* MAIN CONTENT SECTIONS */}
@@ -36,14 +42,14 @@ export default function App() {
           onOpenStoryModal={(bookId) => handleOpenBook(bookId || "detektif-sampah")}
         />
 
-        {/* 2. BUKU SECTION: 2 Buku Utama (Detektif Cilik & Rara dan Bimo) */}
+        {/* 2. BUKU SECTION: 4 Buku Cerita Anak Sahabat Alam */}
         <MeadowSection
           onSelectBook={(bookId) => handleOpenBook(bookId)}
         />
 
-        {/* 3. VIDIO SECTION: Vidio Animasi Aksi Hijau */}
+        {/* 3. VIDIO SECTION: 4 Vidio Animasi & Praktik Aksi Hijau */}
         <ActionSection
-          onOpenVideoModal={() => setIsVideoModalOpen(true)}
+          onOpenVideoModal={(videoId) => handleOpenVideo(videoId || "pantai")}
         />
 
         {/* 4. TENTANG KAMI SECTION: Membaca Digital, Lestarikan Hutan */}
@@ -55,7 +61,7 @@ export default function App() {
       {/* FOOTER */}
       <Footer
         onOpenStoryModal={() => handleOpenBook("detektif-sampah")}
-        onOpenVideoModal={() => setIsVideoModalOpen(true)}
+        onOpenVideoModal={() => handleOpenVideo("pantai")}
       />
 
       {/* INTERACTIVE MODALS */}
@@ -67,6 +73,7 @@ export default function App() {
 
       <VideoModal
         isOpen={isVideoModalOpen}
+        initialVideoId={selectedVideoId}
         onClose={() => setIsVideoModalOpen(false)}
       />
 

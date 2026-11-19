@@ -1,0 +1,54 @@
+export const videosData = [
+  {
+    id: "pantai",
+    judul: "Jangan Buang Sampah di Pantai",
+    subjudul: "Lagu Animasi Lagu Anak Ramah Lingkungan",
+    pembuat: "Karya Hartati",
+    kategori: "Lagu Animasi Musik",
+    durasi: "1:55 Menit",
+    badge: "Lagu Animasi 2D",
+    deskripsi: "Lagu animasi ceria yang mengajak anak-anak bernyanyi sambil belajar menjaga kebersihan pantai, memilah sampah plastik ke tempatnya, serta melindungi kehidupan ikan dan penyu.",
+    poster: "/assets/videos/video-thumb-pantai.jpg",
+    src: "https://github.com/rejischandra27-ai/web-baca-vidio/releases/download/v1.0.0/jangan-buang-sampah-di-pantai.mp4",
+    localSrc: "/assets/videos/jangan-buang-sampah-di-pantai.mp4"
+  },
+  {
+    id: "detektif",
+    judul: "Implementasi Buku: Detektif Cilik Pemilah Sampah",
+    subjudul: "Praktik Belajar Memilah Sampah Bersama Murid",
+    pembuat: "Karya Evi Noviyah",
+    kategori: "Praktik Belajar di Kelas",
+    durasi: "4:45 Menit",
+    badge: "Praktik Kelas",
+    deskripsi: "Dokumentasi kegiatan belajar mengajar dan mendongeng interaktif buku 'Detektif Cilik Pemilah Sampah' bersama anak-anak di dalam ruang kelas.",
+    poster: "/assets/videos/video-thumb-detektif.jpg",
+    src: "https://github.com/rejischandra27-ai/web-baca-vidio/releases/download/v1.0.0/implementasi-detektif-sampah.mp4",
+    localSrc: "/assets/videos/implementasi-detektif-sampah.mp4"
+  },
+  {
+    id: "rara-bimo",
+    judul: "Mendongeng: Rara dan Bimo Sedih Karena Asap Pekat",
+    subjudul: "Cerita Edukasi Udara Bersih & Cegah Karhutla",
+    pembuat: "Karya Ana Tri Rahayu, S.Pd.",
+    kategori: "Kegiatan Mendongeng",
+    durasi: "8:16 Menit",
+    badge: "Mendongeng Gazebo",
+    deskripsi: "Ibu Guru Ana mendongeng hangat bersama anak-anak di gazebo sekolah, menyampaikan pesan pentingnya menjaga hutan agar terhindar dari kebakaran dan polusi asap.",
+    poster: "/assets/videos/video-thumb-rara-bimo.jpg",
+    src: "https://github.com/rejischandra27-ai/web-baca-vidio/releases/download/v1.0.0/mendongeng-rara-dan-bimo.mp4",
+    localSrc: "/assets/videos/mendongeng-rara-dan-bimo.mp4"
+  },
+  {
+    id: "pohon-jambu",
+    judul: "Mendongeng: Nail, Alifa, dan Rahasia Pohon Jambu",
+    subjudul: "Cerita Edukasi Merawat Pohon di TK Putra Pertiwi",
+    pembuat: "Karya Ibu Wilda",
+    kategori: "Mendongeng TK Putra Pertiwi",
+    durasi: "12:58 Menit",
+    badge: "TK Putra Pertiwi",
+    deskripsi: "Keseruan mendongeng di TK Putra Pertiwi bersama Ibu Wilda, menemukan rahasia keteduhan pohon jambu Jamaika 'Jaja', serta merawat tanaman sekolah.",
+    poster: "/assets/videos/video-thumb-pohon-jambu.jpg",
+    src: "https://github.com/rejischandra27-ai/web-baca-vidio/releases/download/v1.0.0/mendongeng-rahasia-pohon-jambu.mp4",
+    localSrc: "/assets/videos/mendongeng-rahasia-pohon-jambu.mp4"
+  }
+];

@@ -22,7 +22,7 @@ export default function StoryReaderModal({ isOpen, onClose, initialBookId = "det
       penulis: "Evi Noviyah",
       total: 16,
       badge: "Pilah Sampah",
-      pdf: "/assets/books/buku-detektif-pemilah-sampah.pdf",
+      pdf: "https://github.com/rejischandra27-ai/web-baca-vidio/releases/download/v1.0.0/buku-detektif-pemilah-sampah.pdf",
       pages: Array.from({ length: 16 }, (_, i) => `/assets/books/detektif-sampah/page_${i + 1}.jpg`)
     },
     "rara-dan-bimo": {
@@ -31,7 +31,7 @@ export default function StoryReaderModal({ isOpen, onClose, initialBookId = "det
       penulis: "Ana Tri Rahayu, S.Pd.",
       total: 19,
       badge: "Hutan Lestari",
-      pdf: "/assets/books/buku-rara-dan-bimo.pdf",
+      pdf: "https://github.com/rejischandra27-ai/web-baca-vidio/releases/download/v1.0.0/buku-rara-dan-bimo.pdf",
       pages: Array.from({ length: 19 }, (_, i) => `/assets/books/rara-bimo/page_${i + 1}.jpg`)
     },
     "rahasia-pohon-jambu": {
@@ -40,7 +40,7 @@ export default function StoryReaderModal({ isOpen, onClose, initialBookId = "det
       penulis: "Wilda Widya Panji Buwani",
       total: 16,
       badge: "Pohon Rindang",
-      pdf: "/assets/books/buku-rahasia-pohon-jambu.pdf",
+      pdf: "https://github.com/rejischandra27-ai/web-baca-vidio/releases/download/v1.0.0/buku-rahasia-pohon-jambu.pdf",
       pages: Array.from({ length: 16 }, (_, i) => `/assets/books/rahasia-pohon-jambu/page_${i + 1}.jpg`)
     },
     "kali-kecil": {
@@ -49,7 +49,7 @@ export default function StoryReaderModal({ isOpen, onClose, initialBookId = "det
       penulis: "Ria Oktari Pamungkas",
       total: 15,
       badge: "Sungai Bersih",
-      pdf: "/assets/books/buku-kali-kecil.pdf",
+      pdf: "https://github.com/rejischandra27-ai/web-baca-vidio/releases/download/v1.0.0/buku-kali-kecil.pdf",
       pages: Array.from({ length: 15 }, (_, i) => `/assets/books/kali-kecil/page_${i + 1}.jpg`)
     }
   };

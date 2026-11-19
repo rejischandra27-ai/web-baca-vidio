@@ -15,7 +15,7 @@ export default function MeadowSection({ onSelectBook }) {
       badge: "Eco Green • Pilah Sampah",
       deskripsi: "Pagi itu di taman sekolah, Aisyah, Bima, dan Nala menemukan sampah berserakan. Mereka menjadi detektif pemilah sampah cilik untuk memilah sampah organik, kertas, dan plastik demi menyelamatkan bumi.",
       cover: "/assets/books/cover-detektif-sampah.jpg",
-      pdf: "/assets/books/buku-detektif-pemilah-sampah.pdf"
+      pdf: "https://github.com/rejischandra27-ai/web-baca-vidio/releases/download/v1.0.0/buku-detektif-pemilah-sampah.pdf"
     },
     {
       id: "rara-dan-bimo",
@@ -27,7 +27,7 @@ export default function MeadowSection({ onSelectBook }) {
       badge: "Hutan Lestari • Udara Bersih",
       deskripsi: "Rara dan Bimo sangat suka bermain layang-layang di lapangan. Suatu hari, langit biru cerah berubah menjadi abu-abu pekat karena kebakaran hutan. Mengajarkan anak pentingnya menjaga pohon agar udara tetap segar.",
       cover: "/assets/books/cover-rara-bimo.jpg",
-      pdf: "/assets/books/buku-rara-dan-bimo.pdf"
+      pdf: "https://github.com/rejischandra27-ai/web-baca-vidio/releases/download/v1.0.0/buku-rara-dan-bimo.pdf"
     },
     {
       id: "rahasia-pohon-jambu",
@@ -39,7 +39,7 @@ export default function MeadowSection({ onSelectBook }) {
       badge: "Pohon Rindang • Sekolah Asri",
       deskripsi: "Nail dan Alifa berteduh di bawah pohon jambu Jamaika bernama Jaja. Bersama Ibu Guru Wilda, mereka belajar rahasia daun yang memberi keteduhan, merawat tanaman, dan menyayangi bumi.",
       cover: "/assets/books/cover-rahasia-pohon-jambu.jpg",
-      pdf: "/assets/books/buku-rahasia-pohon-jambu.pdf"
+      pdf: "https://github.com/rejischandra27-ai/web-baca-vidio/releases/download/v1.0.0/buku-rahasia-pohon-jambu.pdf"
     },
     {
       id: "kali-kecil",
@@ -51,7 +51,7 @@ export default function MeadowSection({ onSelectBook }) {
       badge: "Sungai Bersih • Sahabat Air",
       deskripsi: "Bu Guru Ria bersama Raka, Naya, dan Bima melihat sampah berserakan di kali dekat sekolah. Mereka bergotong royong membersihkan kali agar air kembali jernih dan aliran sungai tetap lestari.",
       cover: "/assets/books/cover-kali-kecil.jpg",
-      pdf: "/assets/books/buku-kali-kecil.pdf"
+      pdf: "https://github.com/rejischandra27-ai/web-baca-vidio/releases/download/v1.0.0/buku-kali-kecil.pdf"
     }
   ];
 

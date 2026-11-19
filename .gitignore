@@ -25,3 +25,7 @@ dist-ssr
 
 # Vercel
 .vercel
+
+# Heavy PDFs (Uploaded to GitHub Releases for fast CDN downloads)
+public/assets/books/*.pdf
+

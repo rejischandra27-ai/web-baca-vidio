@@ -1,37 +1,49 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, PlayCircle, Leaf } from 'lucide-react';
+import { X, PlayCircle, Leaf, Music, Sparkles } from 'lucide-react';
 import { soundFx } from '../utils/sound';
 
 export default function VideoModal({ isOpen, onClose }) {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (isOpen && videoRef.current) {
+      videoRef.current.currentTime = 0;
+      videoRef.current.play().catch(() => {});
+    }
+  }, [isOpen]);
+
   if (!isOpen) return null;
 
   return (
     <AnimatePresence>
       <div
-        className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/75 backdrop-blur-md"
+        className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-md"
         onClick={onClose}
       >
         <motion.div
-          initial={{ opacity: 0, scale: 0.9, y: 20 }}
+          initial={{ opacity: 0, scale: 0.92, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
-          exit={{ opacity: 0, scale: 0.9, y: 20 }}
+          exit={{ opacity: 0, scale: 0.92, y: 20 }}
           transition={{ duration: 0.3, ease: 'easeOut' }}
-          className="relative w-full max-w-4xl bg-[#081c10] rounded-3xl shadow-2xl border-2 border-[#81c784]/30 overflow-hidden"
+          className="relative w-full max-w-4xl bg-[#081c10] rounded-3xl shadow-2xl border-2 border-[#81c784]/40 overflow-hidden"
           onClick={(e) => e.stopPropagation()}
         >
           {/* HEADER */}
-          <div className="px-6 py-4 bg-[#0f3117] flex items-center justify-between border-b border-white/10">
-            <div className="flex items-center gap-2.5 text-white">
-              <span className="p-1.5 rounded-lg bg-[#2e7d32]/30 text-[#81c784]">
-                <Leaf size={18} />
+          <div className="px-5 sm:px-6 py-3.5 bg-[#0f3117] flex items-center justify-between border-b border-white/10">
+            <div className="flex items-center gap-3 text-white">
+              <span className="p-2 rounded-xl bg-[#2e7d32]/40 text-[#81c784] border border-[#81c784]/30">
+                <Music size={18} />
               </span>
               <div>
-                <h4 className="font-storybook font-bold text-base text-white">
-                  Vidio Animasi Edukasi: Aksi Hijau Sahabat Bumi
+                <h4 className="font-storybook font-bold text-base sm:text-lg text-white flex items-center gap-2">
+                  <span>Jangan Buang Sampah di Pantai</span>
+                  <span className="text-xs font-normal px-2.5 py-0.5 rounded-full bg-[#2e7d32]/50 text-[#c8e6c9] border border-[#81c784]/30">
+                    Karya Hartati
+                  </span>
                 </h4>
                 <p className="text-xs text-[#a5d6a7]">
-                  Serial Animasi Interaktif Echo Green (Belajar Menanam Pohon & Menjaga Hutan)
+                  Lagu & Vidio Animasi Edukasi Anak Ramah Lingkungan (Jaga Pantai & Laut untuk Bumi)
                 </p>
               </div>
             </div>
@@ -41,31 +53,39 @@ export default function VideoModal({ isOpen, onClose }) {
                 soundFx.playChime(440);
                 onClose();
               }}
-              className="p-1.5 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors cursor-pointer"
+              title="Tutup vidio"
+              className="p-2 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors cursor-pointer"
             >
               <X size={20} />
             </button>
           </div>
 
-          {/* 16:9 VIDEO FRAME */}
-          <div className="relative w-full aspect-video bg-black">
-            <iframe
-              className="w-full h-full"
-              src="https://www.youtube-nocookie.com/embed/50ZG8BOiuFk?autoplay=1&rel=0&modestbranding=1"
-              title="Echo Green Interactive Video Animation"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+          {/* REAL MP4 VIDEO PLAYER */}
+          <div className="relative w-full aspect-video bg-black flex items-center justify-center overflow-hidden">
+            <video
+              ref={videoRef}
+              controls
+              autoPlay
+              playsInline
+              poster="/assets/videos/video-thumb-title.jpg"
+              className="w-full h-full object-contain"
+              src="/assets/videos/jangan-buang-sampah-di-pantai.mp4"
+            >
+              Browser Anda tidak mendukung pemutar video HTML5.
+            </video>
           </div>
 
           {/* FOOTER INFO */}
-          <div className="px-6 py-3 bg-[#0f3117] text-xs text-[#c8e6c9] flex items-center justify-between">
-            <span>🌿 Belajar mencintai keindahan alam lewat animasi digital yang mendidik.</span>
+          <div className="px-5 sm:px-6 py-3 bg-[#0f3117] text-xs text-[#c8e6c9] flex flex-col sm:flex-row items-center justify-between gap-2 border-t border-white/10">
+            <span className="flex items-center gap-1.5 text-center sm:text-left">
+              <Leaf size={14} className="text-[#81c784] shrink-0" />
+              <span>Belajar mencintai laut & pantai, memilah sampah plastik, dan melindungi ikan serta penyu.</span>
+            </span>
             <button
               onClick={onClose}
-              className="px-4 py-1.5 rounded-full bg-[#2e7d32] hover:bg-[#1b5e20] text-white font-medium transition-colors cursor-pointer"
+              className="px-5 py-1.5 rounded-full bg-[#2e7d32] hover:bg-[#1b5e20] text-white font-semibold transition-all duration-200 cursor-pointer text-xs shadow-md shrink-0"
             >
-              Tutup Vidio
+              Tutup Pemutar
             </button>
           </div>
         </motion.div>

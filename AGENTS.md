@@ -2,13 +2,18 @@
 
 ## 1. Identitas Proyek & Status Saat Ini
 - **Nama Proyek:** Echo Green (Web Cerita & Animasi Anak Ramah Lingkungan)
-- **Fase Saat Ini:** `BUILD` (Bookshelf Redesigned without bulky cards + Real Jangan Buang Sampah di Pantai Video Integrated)
+- **Fase Saat Ini:** `BUILD` (4 Real Books & 4 Real Storytelling Videos Fully Integrated)
 - **Tujuan:** Mengembangkan landing page interaktif bertema **Echo Green** dengan menu canonical: **Home**, **Buku**, **Vidio**, **Tentang Kami**. Dilengkapi 4 buku cerita digital nyata dari pengguna:
   1. *Detektif Cilik Pemilah Sampah* (Evi Noviyah, 16 Halaman)
   2. *Rara dan Bimo Sedih Karena Asap Pekat* (Ana Tri Rahayu, S.Pd., 19 Halaman)
   3. *Nail, Alifa, dan Rahasia Pohon Jambu* (Wilda Widya Panji Buwani, 16 Halaman)
   4. *Kali Kecil, Sahabat Besar* (Ria Oktari Pamungkas, 15 Halaman)
-  Serta video animasi lagu anak asli pengguna: *Jangan Buang Sampah di Pantai* (Karya Hartati, 1:55 menit MP4) di dalam pemutar tablet interaktif.
+  Serta galeri 4 video edukasi anak asli dari pengguna:
+  1. *Jangan Buang Sampah di Pantai* (Karya Hartati, Animasi Musik 1:55)
+  2. *Implementasi Detektif Cilik Pemilah Sampah* (Karya Evi Noviyah, Praktik Kelas 4:45)
+  3. *Mendongeng Rara dan Bimo Sedih* (Karya Ana Tri Rahayu, S.Pd., Gazebo 8:16)
+  4. *Mendongeng Nail, Alifa, dan Rahasia Pohon Jambu* (Karya Ibu Wilda, TK Putra Pertiwi 12:58)
+  Dilengkapi mockup tablet interaktif dan modal pemutar video dengan switcher playlist.
 
 ## 2. Peta Dokumen & Tanggung Jawab Subjek
 - `docs/PLAN.md` : Rencana implementasi, urutan pengerjaan, dan spesifikasi buku & animasi.

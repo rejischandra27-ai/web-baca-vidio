@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #f2f8f1;
+    background-image: 
+      radial-gradient(at 15% 15%, rgba(200, 230, 201, 0.4) 0px, transparent 50%),
+      radial-gradient(at 85% 85%, rgba(129, 199, 132, 0.15) 0px, transparent 50%);
+    color: #0e2b17;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-storybook {
+    font-family: 'Fraunces', serif;
+  }
+}
+
+/* Perspective */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+/* Floating animation helper */
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(1.5deg);
+  }
+}
+
+.animate-float-gentle {
+  animation: floatGentle 5s ease-in-out infinite;
+}
+
+/* Butterfly flutter animation */
+@keyframes flutterWing {
+  0%, 100% {
+    transform: scale(1) translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: scale(0.95, 1.05) translateY(-8px) rotate(6deg);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(-14px) rotate(-4deg);
+  }
+  75% {
+    transform: scale(0.98, 1.02) translateY(-6px) rotate(3deg);
+  }
+}
+
+.animate-flutter-wing {
+  animation: flutterWing 4s ease-in-out infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f2f8f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #2e7d32;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1b5e20;
+}

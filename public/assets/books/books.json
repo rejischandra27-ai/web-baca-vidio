@@ -1,0 +1,63 @@
+[
+  {
+    "id": "detektif-sampah",
+    "judul": "Detektif Cilik Pemilah Sampah",
+    "subjudul": "Petualangan Kecil Menyelamatkan Bumi",
+    "penulis": "Evi Noviyah",
+    "usia": "5-6 Tahun",
+    "halaman": 16,
+    "deskripsi": "Aisyah, Bima, dan Nala bermain di taman sekolah lalu melihat sampah berserakan. Mereka menjadi detektif pemilah sampah untuk mengelompokkan sampah organik, kertas, dan plastik demi menyelamatkan bumi.",
+    "cover": "/assets/books/cover-detektif-sampah.jpg",
+    "pdf": "/assets/books/buku-detektif-pemilah-sampah.pdf",
+    "pages": [
+      "/assets/books/detektif-sampah/page_1.jpg",
+      "/assets/books/detektif-sampah/page_2.jpg",
+      "/assets/books/detektif-sampah/page_3.jpg",
+      "/assets/books/detektif-sampah/page_4.jpg",
+      "/assets/books/detektif-sampah/page_5.jpg",
+      "/assets/books/detektif-sampah/page_6.jpg",
+      "/assets/books/detektif-sampah/page_7.jpg",
+      "/assets/books/detektif-sampah/page_8.jpg",
+      "/assets/books/detektif-sampah/page_9.jpg",
+      "/assets/books/detektif-sampah/page_10.jpg",
+      "/assets/books/detektif-sampah/page_11.jpg",
+      "/assets/books/detektif-sampah/page_12.jpg",
+      "/assets/books/detektif-sampah/page_13.jpg",
+      "/assets/books/detektif-sampah/page_14.jpg",
+      "/assets/books/detektif-sampah/page_15.jpg",
+      "/assets/books/detektif-sampah/page_16.jpg"
+    ]
+  },
+  {
+    "id": "rara-dan-bimo",
+    "judul": "Rara dan Bimo Sedih Tidak Bisa Bermain Layang-Layang",
+    "subjudul": "Cerita Tentang Udara Bersih dan Hutan yang Harus Kita Jaga",
+    "penulis": "Ana Tri Rahayu, S.Pd.",
+    "usia": "Semua Usia",
+    "halaman": 19,
+    "deskripsi": "Rara dan Bimo sangat suka bermain layang-layang di lapangan. Suatu hari, langit cerah berubah kelabu pekat karena kebakaran hutan. Kisah haru dan edukatif tentang pentingnya menjaga hutan agar udara tetap bersih dan segar.",
+    "cover": "/assets/books/cover-rara-bimo.jpg",
+    "pdf": "/assets/books/buku-rara-dan-bimo.pdf",
+    "pages": [
+      "/assets/books/rara-bimo/page_1.jpg",
+      "/assets/books/rara-bimo/page_2.jpg",
+      "/assets/books/rara-bimo/page_3.jpg",
+      "/assets/books/rara-bimo/page_4.jpg",
+      "/assets/books/rara-bimo/page_5.jpg",
+      "/assets/books/rara-bimo/page_6.jpg",
+      "/assets/books/rara-bimo/page_7.jpg",
+      "/assets/books/rara-bimo/page_8.jpg",
+      "/assets/books/rara-bimo/page_9.jpg",
+      "/assets/books/rara-bimo/page_10.jpg",
+      "/assets/books/rara-bimo/page_11.jpg",
+      "/assets/books/rara-bimo/page_12.jpg",
+      "/assets/books/rara-bimo/page_13.jpg",
+      "/assets/books/rara-bimo/page_14.jpg",
+      "/assets/books/rara-bimo/page_15.jpg",
+      "/assets/books/rara-bimo/page_16.jpg",
+      "/assets/books/rara-bimo/page_17.jpg",
+      "/assets/books/rara-bimo/page_18.jpg",
+      "/assets/books/rara-bimo/page_19.jpg"
+    ]
+  }
+]

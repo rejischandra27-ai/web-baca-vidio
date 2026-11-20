@@ -71,6 +71,19 @@ export default function MeadowSection({ onSelectBook }) {
       deskripsi: "Baim dan Rani melihat ikan kecil kesulitan berenang di sungai karena tumpukan sampah. Bersama Pak Sungai, mereka belajar menjaga kebersihan air.",
       cover: "/assets/books/cover-baim-dan-rani.jpg",
       pdf: "/assets/books/buku-baim-dan-rani.pdf"
+    },
+    {
+      id: "jejak-kaki-kiki",
+      judul: "Jejak Kaki Kiki di Tepi Pantai",
+      subjudul: "Petualangan Kiki & Bimo Menjaga Laut Bersih",
+      penulis: "Hartati",
+      usia: "Semua Usia",
+      halaman: 19,
+      badge: "Pantai Bersih",
+      category: "pantai",
+      deskripsi: "Kiki dan Bimo bermain di pantai yang indah. Ketika Kiki membuang sampah plastik sembarangan, ia menyadari bahayanya bagi laut dan satwa. Cerita edukatif menjaga kebersihan pantai.",
+      cover: "/assets/books/cover-jejak-kaki-kiki.jpg",
+      pdf: "/assets/books/buku-jejak-kaki-kiki.pdf"
     }
   ];
 
@@ -189,6 +202,19 @@ export default function MeadowSection({ onSelectBook }) {
               }`}
             >
               💧 Sungai Bersih
+            </button>
+            <button
+              onClick={() => {
+                soundFx.playChime(750);
+                setActiveFilter("pantai");
+              }}
+              className={`px-4 py-1.5 rounded-full transition-all duration-200 cursor-pointer ${
+                activeFilter === "pantai"
+                  ? "bg-white text-[#1b5e20] shadow-md font-bold scale-105"
+                  : "bg-white/15 text-white hover:bg-white/25 border border-white/20"
+              }`}
+            >
+              🏖️ Pantai & Laut
             </button>
           </div>
         </motion.div>

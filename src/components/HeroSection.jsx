@@ -70,6 +70,18 @@ export default function HeroSection({ onOpenStoryModal }) {
       cover: "/assets/books/cover-baim-dan-rani.jpg",
       pillTheme: "Sungai Bersih & Sahabat Ikan",
       cta: "Baca Buku Baim & Rani Sekarang"
+    },
+    {
+      id: "jejak-kaki-kiki",
+      judul: "Jejak Kaki Kiki di Tepi Pantai.",
+      subjudul: '"Petualangan Kiki & Bimo Menjaga Laut Bersih"',
+      penulis: "Karya Hartati",
+      usia: "Semua Usia",
+      sinopsis: "Kiki dan Bimo asyik bermain di pantai berpasir putih. Ketika Kiki membuang bungkus plastik sembarangan, ombak laut membawa sampah itu hingga melilit kakinya. Dari kejadian itu, Kiki menyadari bahaya sampah plastik bagi hewan laut dan ekosistem pantai.",
+      halaman: 19,
+      cover: "/assets/books/cover-jejak-kaki-kiki.jpg",
+      pillTheme: "Pantai Bersih & Bebas Plastik",
+      cta: "Baca Buku Jejak Kaki Kiki Sekarang"
     }
   ];
 

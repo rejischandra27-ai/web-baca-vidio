@@ -50,6 +50,15 @@ export default function NightDevicesMockup({ onOpenBook }) {
       tabletCover: "/assets/books/cover-baim-dan-rani.jpg",
       phonePage: "/assets/books/baim-dan-rani/page_3.jpg",
       halaman: 19
+    },
+    {
+      id: "jejak-kaki-kiki",
+      judul: "Jejak Kaki Kiki di Tepi Pantai",
+      penulis: "Hartati",
+      tag: "Pantai & Laut",
+      tabletCover: "/assets/books/cover-jejak-kaki-kiki.jpg",
+      phonePage: "/assets/books/jejak-kaki-kiki/page_3.jpg",
+      halaman: 19
     }
   ];
 

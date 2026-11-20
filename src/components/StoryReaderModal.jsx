@@ -61,6 +61,16 @@ export default function StoryReaderModal({ isOpen, onClose, initialBookId = "det
       badge: "Sungai Bersih",
       pdf: "/assets/books/buku-baim-dan-rani.pdf",
       pages: Array.from({ length: 19 }, (_, i) => `/assets/books/baim-dan-rani/page_${i + 1}.jpg`)
+    },
+    "jejak-kaki-kiki": {
+      id: "jejak-kaki-kiki",
+      judul: "Jejak Kaki Kiki di Tepi Pantai",
+      subjudul: "Petualangan Kiki & Bimo Menjaga Laut Bersih",
+      penulis: "Hartati",
+      total: 19,
+      badge: "Pantai Bersih",
+      pdf: "/assets/books/buku-jejak-kaki-kiki.pdf",
+      pages: Array.from({ length: 19 }, (_, i) => `/assets/books/jejak-kaki-kiki/page_${i + 1}.jpg`)
     }
   };
 

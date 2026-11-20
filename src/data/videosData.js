@@ -1,5 +1,20 @@
 export const videosData = [
   {
+    id: "animasi-detektif-sampah",
+    judul: "Detektif Cilik Pemilah Sampah",
+    subjudul: "Animasi Edukasi Memilah Sampah Bersama Aisyah, Bima & Nala",
+    pembuat: "Karya Evi Noviyah, S.Pd.",
+    kategori: "Animasi Edukasi Anak",
+    tipe: "animasi",
+    kategoriLabel: "Vidio Animasi",
+    durasi: "2:20 Menit",
+    badge: "Animasi 2D",
+    deskripsi: "Animasi seru dan ceria kisah Detektif Cilik Pemilah Sampah. Mengajak anak-anak menjadi detektif bumi yang pintar memilah sampah organik, anorganik, kertas, dan B3 demi lingkungan sekolah yang asri.",
+    poster: "/assets/videos/video-thumb-animasi-evi.jpg",
+    src: "https://github.com/rejischandra27-ai/web-baca-vidio/releases/download/v1.0.0/animasi-detektif-sampah.mp4",
+    localSrc: "/assets/videos/animasi-detektif-sampah.mp4"
+  },
+  {
     id: "kali-kecil-animasi",
     judul: "Kali Kecil Sahabat Besar",
     subjudul: "Animasi Cerita Sungai Bersih Sahabat Anak",

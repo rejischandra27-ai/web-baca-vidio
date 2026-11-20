@@ -11,13 +11,14 @@
   5. *Baim dan Rani Sedih Melihat Ikan Kecil* (Effi Tugiarti, S.Pd, 19 Halaman)
   6. *Jejak Kaki Kiki di Tepi Pantai* (Hartati, 19 Halaman)
   7. *Bumi Sedang Kepanasan* (Yanike Martinawaty, S.Pd, 14 Halaman)
-  Serta galeri 9 video edukasi anak asli dari pengguna:
-  - **Vidio Animasi (5 Video):**
-    1. *Kali Kecil Sahabat Besar* (Karya Ria Oktari Pamungkas, Animasi Cerita 2:05)
-    2. *Mendongeng & Animasi: Rara dan Bimo Sedih* (Karya Ana Tri Rahayu, S.Pd., Animasi & Dongeng 8:16)
-    3. *Ikan Kecil Riang* (Karya Effi Tugiarti, S.Pd, Animasi 3D 1:11)
-    4. *Jaga Bumi* (Karya Wilda Widya Panji Buwani, Animasi 3D 1:37)
-    5. *Jangan Buang Sampah di Pantai* (Karya Hartati, Animasi Musik 1:55)
+  Serta galeri 10 video edukasi anak asli dari pengguna:
+  - **Vidio Animasi (6 Video):**
+    1. *Detektif Cilik Pemilah Sampah* (Karya Evi Noviyah, S.Pd., Animasi 2D 2:20)
+    2. *Kali Kecil Sahabat Besar* (Karya Ria Oktari Pamungkas, Animasi Cerita 2:05)
+    3. *Mendongeng & Animasi: Rara dan Bimo Sedih* (Karya Ana Tri Rahayu, S.Pd., Animasi & Dongeng 8:16)
+    4. *Ikan Kecil Riang* (Karya Effi Tugiarti, S.Pd, Animasi 3D 1:11)
+    5. *Jaga Bumi* (Karya Wilda Widya Panji Buwani, Animasi 3D 1:37)
+    6. *Jangan Buang Sampah di Pantai* (Karya Hartati, Animasi Musik 1:55)
   - **Vidio Bercerita (5 Video):**
     5. *Implementasi Detektif Cilik Pemilah Sampah* (Karya Evi Noviyah, Praktik Kelas 4:45)
     6. *Mendongeng & Animasi: Rara dan Bimo Sedih* (Karya Ana Tri Rahayu, S.Pd., Gazebo 8:16)

@@ -51,6 +51,16 @@ export default function StoryReaderModal({ isOpen, onClose, initialBookId = "det
       badge: "Sungai Bersih",
       pdf: "https://github.com/rejischandra27-ai/web-baca-vidio/releases/download/v1.0.0/buku-kali-kecil.pdf",
       pages: Array.from({ length: 15 }, (_, i) => `/assets/books/kali-kecil/page_${i + 1}.jpg`)
+    },
+    "baim-dan-rani": {
+      id: "baim-dan-rani",
+      judul: "Baim dan Rani",
+      subjudul: "Sedih Melihat Ikan Kecil yang Tidak Bisa Berenang karena Dikelilingi Sampah",
+      penulis: "Effi Tugiarti, S.Pd",
+      total: 19,
+      badge: "Sungai Bersih",
+      pdf: "/assets/books/buku-baim-dan-rani.pdf",
+      pages: Array.from({ length: 19 }, (_, i) => `/assets/books/baim-dan-rani/page_${i + 1}.jpg`)
     }
   };
 

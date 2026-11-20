@@ -58,6 +58,19 @@ export default function MeadowSection({ onSelectBook }) {
       deskripsi: "Bu Guru Ria bersama anak-anak bergotong royong membersihkan kali kecil dekat sekolah agar air kembali jernih.",
       cover: "/assets/books/cover-kali-kecil.jpg",
       pdf: "https://github.com/rejischandra27-ai/web-baca-vidio/releases/download/v1.0.0/buku-kali-kecil.pdf"
+    },
+    {
+      id: "baim-dan-rani",
+      judul: "Baim dan Rani",
+      subjudul: "Sedih Melihat Ikan Kecil yang Tidak Bisa Berenang karena Dikelilingi Sampah",
+      penulis: "Effi Tugiarti, S.Pd",
+      usia: "Usia 4-8 Tahun",
+      halaman: 19,
+      badge: "Sungai Bersih",
+      category: "air",
+      deskripsi: "Baim dan Rani melihat ikan kecil kesulitan berenang di sungai karena tumpukan sampah. Bersama Pak Sungai, mereka belajar menjaga kebersihan air.",
+      cover: "/assets/books/cover-baim-dan-rani.jpg",
+      pdf: "/assets/books/buku-baim-dan-rani.pdf"
     }
   ];
 
@@ -103,7 +116,7 @@ export default function MeadowSection({ onSelectBook }) {
           </div>
 
           <h2 className="font-storybook text-4xl sm:text-5xl font-bold text-white leading-tight tracking-tight drop-shadow-sm">
-            Koleksi 4 Buku Cerita Asli.
+            Koleksi {books.length} Buku Cerita Asli.
           </h2>
 
           <p className="mt-3 text-base sm:text-lg text-white/90 font-normal leading-relaxed">

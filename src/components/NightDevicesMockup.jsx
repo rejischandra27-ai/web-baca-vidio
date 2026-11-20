@@ -41,6 +41,15 @@ export default function NightDevicesMockup({ onOpenBook }) {
       tabletCover: "/assets/books/cover-kali-kecil.jpg",
       phonePage: "/assets/books/kali-kecil/page_2.jpg",
       halaman: 15
+    },
+    {
+      id: "baim-dan-rani",
+      judul: "Baim dan Rani",
+      penulis: "Effi Tugiarti, S.Pd",
+      tag: "Ikan & Sungai",
+      tabletCover: "/assets/books/cover-baim-dan-rani.jpg",
+      phonePage: "/assets/books/baim-dan-rani/page_3.jpg",
+      halaman: 19
     }
   ];
 

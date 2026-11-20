@@ -2,12 +2,13 @@
 
 ## 1. Identitas Proyek & Status Saat Ini
 - **Nama Proyek:** Echo Green (Web Cerita & Animasi Anak Ramah Lingkungan)
-- **Fase Saat Ini:** `BUILD` (4 Real Books & 5 Real Eco Videos Fully Integrated)
-- **Tujuan:** Mengembangkan landing page interaktif bertema **Echo Green** dengan menu canonical: **Home**, **Buku**, **Vidio Animasi**, **Vidio Bercerita**, **Tentang Kami**. Dilengkapi 4 buku cerita digital nyata dari pengguna:
+- **Fase Saat Ini:** `BUILD` (5 Real Books & 5 Real Eco Videos Fully Integrated)
+- **Tujuan:** Mengembangkan landing page interaktif bertema **Echo Green** dengan menu canonical: **Home**, **Buku**, **Vidio Animasi**, **Vidio Bercerita**, **Tentang Kami**. Dilengkapi 5 buku cerita digital nyata dari pengguna:
   1. *Detektif Cilik Pemilah Sampah* (Evi Noviyah, 16 Halaman)
   2. *Rara dan Bimo Sedih Karena Asap Pekat* (Ana Tri Rahayu, S.Pd., 19 Halaman)
   3. *Nail, Alifa, dan Rahasia Pohon Jambu* (Wilda Widya Panji Buwani, 16 Halaman)
   4. *Kali Kecil, Sahabat Besar* (Ria Oktari Pamungkas, 15 Halaman)
+  5. *Baim dan Rani Sedih Melihat Ikan Kecil* (Effi Tugiarti, S.Pd, 19 Halaman)
   Serta galeri 5 video edukasi anak asli dari pengguna:
   - **Vidio Animasi (2 Video):**
     1. *Jaga Bumi* (Karya Wilda Widya Panji Buwani, Animasi 3D 1:37)

@@ -58,6 +58,18 @@ export default function HeroSection({ onOpenStoryModal }) {
       cover: "/assets/books/cover-kali-kecil.jpg",
       pillTheme: "Sungai Bersih & Sahabat Air",
       cta: "Baca Buku Kali Kecil Sekarang"
+    },
+    {
+      id: "baim-dan-rani",
+      judul: "Baim dan Rani.",
+      subjudul: '"Sedih Melihat Ikan Kecil yang Tidak Bisa Berenang karena Dikelilingi Sampah"',
+      penulis: "Karya Effi Tugiarti, S.Pd",
+      usia: "Usia 4-8 Tahun",
+      sinopsis: "Baim dan Rani sedang bermain di tepi sungai ketika melihat ikan kecil kesulitan berenang di antara sampah yang berserakan. Bersama Pak Sungai, mereka belajar membersihkan air dan mengajak teman-teman menjadi penjaga sungai.",
+      halaman: 19,
+      cover: "/assets/books/cover-baim-dan-rani.jpg",
+      pillTheme: "Sungai Bersih & Sahabat Ikan",
+      cta: "Baca Buku Baim & Rani Sekarang"
     }
   ];
 

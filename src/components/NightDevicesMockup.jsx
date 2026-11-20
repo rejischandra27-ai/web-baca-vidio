@@ -59,6 +59,15 @@ export default function NightDevicesMockup({ onOpenBook }) {
       tabletCover: "/assets/books/cover-jejak-kaki-kiki.jpg",
       phonePage: "/assets/books/jejak-kaki-kiki/page_3.jpg",
       halaman: 19
+    },
+    {
+      id: "bumi-kepanasan",
+      judul: "Bumi Sedang Kepanasan",
+      penulis: "Yanike Martinawaty, S.Pd",
+      tag: "Bumi Sejuk",
+      tabletCover: "/assets/books/cover-bumi-kepanasan.jpg",
+      phonePage: "/assets/books/bumi-kepanasan/page_2.jpg",
+      halaman: 14
     }
   ];
 

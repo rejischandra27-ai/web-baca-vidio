@@ -71,6 +71,16 @@ export default function StoryReaderModal({ isOpen, onClose, initialBookId = "det
       badge: "Pantai Bersih",
       pdf: "/assets/books/buku-jejak-kaki-kiki.pdf",
       pages: Array.from({ length: 19 }, (_, i) => `/assets/books/jejak-kaki-kiki/page_${i + 1}.jpg`)
+    },
+    "bumi-kepanasan": {
+      id: "bumi-kepanasan",
+      judul: "Bumi Sedang Kepanasan",
+      subjudul: "Kisah Lala & Bimo Menjaga Suhu Bumi Tetap Sejuk",
+      penulis: "Yanike Martinawaty, S.Pd",
+      total: 14,
+      badge: "Bumi Sejuk",
+      pdf: "https://github.com/rejischandra27-ai/web-baca-vidio/releases/download/v1.0.0/buku-bumi-sedang-kepanasan.pdf",
+      pages: Array.from({ length: 14 }, (_, i) => `/assets/books/bumi-kepanasan/page_${i + 1}.jpg`)
     }
   };
 

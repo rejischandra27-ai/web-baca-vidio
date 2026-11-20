@@ -84,6 +84,19 @@ export default function MeadowSection({ onSelectBook }) {
       deskripsi: "Kiki dan Bimo bermain di pantai yang indah. Ketika Kiki membuang sampah plastik sembarangan, ia menyadari bahayanya bagi laut dan satwa. Cerita edukatif menjaga kebersihan pantai.",
       cover: "/assets/books/cover-jejak-kaki-kiki.jpg",
       pdf: "/assets/books/buku-jejak-kaki-kiki.pdf"
+    },
+    {
+      id: "bumi-kepanasan",
+      judul: "Bumi Sedang Kepanasan",
+      subjudul: "Kisah Lala & Bimo Menjaga Suhu Bumi Tetap Sejuk",
+      penulis: "Yanike Martinawaty, S.Pd",
+      usia: "Usia 4-8 Tahun",
+      halaman: 14,
+      badge: "Bumi Sejuk",
+      category: "bumi",
+      deskripsi: "Lala dan Bimo merasakan terik matahari yang semakin panas akibat berkurangnya pohon dan banyaknya sampah. Mereka belajar menanam pohon, memilah sampah, dan menghemat energi demi bumi yang asri.",
+      cover: "/assets/books/cover-bumi-kepanasan.jpg",
+      pdf: "https://github.com/rejischandra27-ai/web-baca-vidio/releases/download/v1.0.0/buku-bumi-sedang-kepanasan.pdf"
     }
   ];
 
@@ -215,6 +228,19 @@ export default function MeadowSection({ onSelectBook }) {
               }`}
             >
               🏖️ Pantai & Laut
+            </button>
+            <button
+              onClick={() => {
+                soundFx.playChime(800);
+                setActiveFilter("bumi");
+              }}
+              className={`px-4 py-1.5 rounded-full transition-all duration-200 cursor-pointer ${
+                activeFilter === "bumi"
+                  ? "bg-white text-[#1b5e20] shadow-md font-bold scale-105"
+                  : "bg-white/15 text-white hover:bg-white/25 border border-white/20"
+              }`}
+            >
+              🌍 Bumi Sejuk
             </button>
           </div>
         </motion.div>

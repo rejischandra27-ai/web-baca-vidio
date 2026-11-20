@@ -82,6 +82,18 @@ export default function HeroSection({ onOpenStoryModal }) {
       cover: "/assets/books/cover-jejak-kaki-kiki.jpg",
       pillTheme: "Pantai Bersih & Bebas Plastik",
       cta: "Baca Buku Jejak Kaki Kiki Sekarang"
+    },
+    {
+      id: "bumi-kepanasan",
+      judul: "Bumi Sedang Kepanasan.",
+      subjudul: '"Kisah Lala & Bimo Menjaga Suhu Bumi Tetap Sejuk"',
+      penulis: "Karya Yanike Martinawaty, S.Pd",
+      usia: "Usia 4-8 Tahun",
+      sinopsis: "Cuaca terasa kian panas dan terik menyengat karena pepohonan berkurang serta sampah menumpuk. Lala dan Bimo tergerak untuk merawat tanaman, memungut sampah, serta menghemat energi agar bumi kembali sejuk dan tersenyum ceria.",
+      halaman: 14,
+      cover: "/assets/books/cover-bumi-kepanasan.jpg",
+      pillTheme: "Bumi Sejuk & Hemat Energi",
+      cta: "Baca Buku Bumi Kepanasan Sekarang"
     }
   ];
 

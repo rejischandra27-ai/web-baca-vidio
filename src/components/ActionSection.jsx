@@ -5,13 +5,13 @@ import { soundFx } from '../utils/sound';
 import { videosData } from '../data/videosData';
 
 export default function ActionSection({ onOpenVideoModal, activeCategory = "all", onSelectCategory }) {
-  const [selectedVideoId, setSelectedVideoId] = useState("jaga-bumi");
+  const [selectedVideoId, setSelectedVideoId] = useState("jaga-bumi-kita");
   const [categoryFilter, setCategoryFilter] = useState(activeCategory);
 
   useEffect(() => {
     setCategoryFilter(activeCategory);
     if (activeCategory === "animasi") {
-      setSelectedVideoId("animasi-detektif-sampah");
+      setSelectedVideoId("jaga-bumi-kita");
     } else if (activeCategory === "bercerita") {
       setSelectedVideoId("rara-bimo");
     }
@@ -24,7 +24,7 @@ export default function ActionSection({ onOpenVideoModal, activeCategory = "all"
       onSelectCategory(cat);
     }
     if (cat === "animasi") {
-      setSelectedVideoId("animasi-detektif-sampah");
+      setSelectedVideoId("jaga-bumi-kita");
     } else if (cat === "bercerita") {
       setSelectedVideoId("rara-bimo");
     }

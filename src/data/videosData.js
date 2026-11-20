@@ -1,5 +1,20 @@
 export const videosData = [
   {
+    id: "jaga-bumi-kita",
+    judul: "Jaga Bumi Kita",
+    subjudul: "Lagu Animasi Edukasi Bumi Sejuk & Hemat Energi Bersama Lala dan Bimo",
+    pembuat: "Karya Yanike Martinawaty, S.Pd",
+    kategori: "Lagu Animasi Musik 3D",
+    tipe: "animasi",
+    kategoriLabel: "Vidio Animasi",
+    durasi: "0:58 Menit",
+    badge: "Animasi 3D",
+    deskripsi: "Lagu animasi 3D edukatif kisah Lala dan Bimo. Mengajak anak-anak menanam pohon, mengurangi sampah plastik, dan menghemat energi (matikan lampu) agar bumi tidak kepanasan dan tetap sejuk.",
+    poster: "/assets/videos/video-thumb-jaga-bumi-kita.jpg",
+    src: "https://github.com/rejischandra27-ai/web-baca-vidio/releases/download/v1.0.0/animasi-jaga-bumi-kita.mp4",
+    localSrc: "/assets/videos/animasi-jaga-bumi-kita.mp4"
+  },
+  {
     id: "animasi-detektif-sampah",
     judul: "Detektif Cilik Pemilah Sampah",
     subjudul: "Animasi Edukasi Memilah Sampah Bersama Aisyah, Bima & Nala",

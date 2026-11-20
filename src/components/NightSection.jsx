@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Sparkles, Leaf, ShieldCheck, Heart } from 'lucide-react';
 import { soundFx } from '../utils/sound';
+import NightDevicesMockup from './NightDevicesMockup';
 
 export default function NightSection({ onOpenStoryModal }) {
   // Fireflies and stars
@@ -133,7 +134,7 @@ export default function NightSection({ onOpenStoryModal }) {
           </div>
         </motion.div>
 
-        {/* RIGHT COLUMN: CUSTOM GENERATED NIGHT TABLET & PHONE */}
+        {/* RIGHT COLUMN: INTERACTIVE DUAL TABLET & SMARTPHONE ECO READER */}
         <motion.div
           initial={{ opacity: 0.9, x: 10 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -141,25 +142,7 @@ export default function NightSection({ onOpenStoryModal }) {
           transition={{ duration: 0.6, delay: 0.1, ease: 'easeOut' }}
           className="md:col-span-6 flex justify-center md:justify-end"
         >
-          <motion.div
-            whileHover={{ scale: 1.03 }}
-            onClick={() => {
-              soundFx.playChime(660);
-              onOpenStoryModal();
-            }}
-            className="relative cursor-pointer group"
-          >
-            {/* Soft firefly glow behind devices */}
-            <div className="absolute -inset-4 bg-[#81c784]/20 rounded-[32px] blur-2xl group-hover:bg-[#81c784]/30 transition-all duration-300"></div>
-
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20 bg-transparent transition-all duration-300 group-hover:shadow-3xl">
-              <img
-                src="/assets/echo/echo-night-devices.png"
-                alt="Echo Green on tablet and phone in night firefly forest"
-                className="w-72 sm:w-88 md:w-[480px] h-auto object-cover block select-none"
-              />
-            </div>
-          </motion.div>
+          <NightDevicesMockup onOpenBook={(bookId) => onOpenStoryModal(bookId || "rara-dan-bimo")} />
         </motion.div>
 
       </div>

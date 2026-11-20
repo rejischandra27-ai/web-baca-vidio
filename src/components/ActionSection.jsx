@@ -1,13 +1,40 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Play, Music, Sparkles, CheckCircle, Video, Clock, User } from 'lucide-react';
+import { Play, Music, Sparkles, CheckCircle, Video, Clock, User, Film, BookOpen } from 'lucide-react';
 import { soundFx } from '../utils/sound';
 import { videosData } from '../data/videosData';
 
-export default function ActionSection({ onOpenVideoModal }) {
+export default function ActionSection({ onOpenVideoModal, activeCategory = "all", onSelectCategory }) {
   const [selectedVideoId, setSelectedVideoId] = useState("pantai");
+  const [categoryFilter, setCategoryFilter] = useState(activeCategory);
 
-  const activeVideo = videosData.find(v => v.id === selectedVideoId) || videosData[0];
+  useEffect(() => {
+    setCategoryFilter(activeCategory);
+    if (activeCategory === "animasi") {
+      setSelectedVideoId("pantai");
+    } else if (activeCategory === "bercerita") {
+      setSelectedVideoId("rara-bimo");
+    }
+  }, [activeCategory]);
+
+  const handleFilterChange = (cat) => {
+    soundFx.playChime(620);
+    setCategoryFilter(cat);
+    if (onSelectCategory) {
+      onSelectCategory(cat);
+    }
+    if (cat === "animasi") {
+      setSelectedVideoId("pantai");
+    } else if (cat === "bercerita") {
+      setSelectedVideoId("rara-bimo");
+    }
+  };
+
+  const filteredVideos = categoryFilter === "all"
+    ? videosData
+    : videosData.filter(v => v.tipe === categoryFilter);
+
+  const activeVideo = videosData.find(v => v.id === selectedVideoId) || filteredVideos[0] || videosData[0];
 
   const handlePlayVideo = (id) => {
     soundFx.playChime(700);
@@ -17,7 +44,7 @@ export default function ActionSection({ onOpenVideoModal }) {
   return (
     <section
       id="vidio"
-      className="relative py-28 px-4 sm:px-6 overflow-hidden bg-[#f4f9f4] text-center"
+      className="relative py-28 px-4 sm:px-6 overflow-hidden bg-[#f4f9f4] text-center scroll-mt-12"
       style={{
         backgroundImage: `
           radial-gradient(ellipse at 50% 30%, rgba(200, 230, 201, 0.35) 0%, transparent 65%),
@@ -25,6 +52,10 @@ export default function ActionSection({ onOpenVideoModal }) {
         `,
       }}
     >
+      {/* Scroll Anchors for Navbar Links */}
+      <div id="vidio-animasi" className="absolute top-12 pointer-events-none" />
+      <div id="vidio-bercerita" className="absolute top-12 pointer-events-none" />
+
       <div className="max-w-6xl mx-auto relative z-10 flex flex-col items-center">
         
         {/* SECTION HEADLINE & SUBTITLE */}
@@ -33,19 +64,55 @@ export default function ActionSection({ onOpenVideoModal }) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="max-w-3xl mx-auto mb-10"
+          className="max-w-3xl mx-auto mb-8"
         >
           <div className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-[#2e7d32]/10 border border-[#2e7d32]/25 text-xs font-bold uppercase tracking-wider text-[#2e7d32] mb-3">
-            <Video size={14} /> Koleksi 4 Vidio Edukasi Sahabat Alam
+            <Video size={14} /> Koleksi Vidio Sahabat Alam
           </div>
 
           <h2 className="font-storybook text-4xl sm:text-5xl font-bold text-[#0e2b17] tracking-tight">
-            Vidio Animasi & Praktik Aksi Hijau.
+            Vidio Animasi & Vidio Bercerita.
           </h2>
 
           <p className="mt-3 text-base sm:text-lg text-[#335e3d] font-normal max-w-xl mx-auto leading-relaxed">
-            Tonton lagu animasi anak dan dokumentasi kegiatan mendongeng interaktif yang mengedukasi kepedulian lingkungan sejak usia dini.
+            Pilih lagu animasi anak ramah lingkungan atau saksikan kegiatan mendongeng interaktif yang mengedukasi cinta alam sejak dini.
           </p>
+
+          {/* CATEGORY TABS SWITCHER: Semua, Vidio Animasi, Vidio Bercerita */}
+          <div className="mt-6 inline-flex items-center gap-2 p-1.5 rounded-full bg-white border border-[#2e7d32]/20 shadow-md">
+            <button
+              onClick={() => handleFilterChange("all")}
+              className={`px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer ${
+                categoryFilter === "all"
+                  ? 'bg-[#2e7d32] text-white shadow-sm'
+                  : 'text-[#1b4d24] hover:bg-[#2e7d32]/10'
+              }`}
+            >
+              Semua Vidio ({videosData.length})
+            </button>
+
+            <button
+              onClick={() => handleFilterChange("animasi")}
+              className={`px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer flex items-center gap-1.5 ${
+                categoryFilter === "animasi"
+                  ? 'bg-[#2e7d32] text-white shadow-sm'
+                  : 'text-[#1b4d24] hover:bg-[#2e7d32]/10'
+              }`}
+            >
+              <Film size={14} /> Vidio Animasi (1)
+            </button>
+
+            <button
+              onClick={() => handleFilterChange("bercerita")}
+              className={`px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer flex items-center gap-1.5 ${
+                categoryFilter === "bercerita"
+                  ? 'bg-[#2e7d32] text-white shadow-sm'
+                  : 'text-[#1b4d24] hover:bg-[#2e7d32]/10'
+              }`}
+            >
+              <BookOpen size={14} /> Vidio Bercerita (3)
+            </button>
+          </div>
         </motion.div>
 
         {/* 1. FEATURED TABLET MOCKUP FOR ACTIVE VIDEO */}
@@ -116,17 +183,23 @@ export default function ActionSection({ onOpenVideoModal }) {
           </div>
         </motion.div>
 
-        {/* 2. GALLERY OF ALL 4 VIDEOS (PLAYLIST CARDS) */}
+        {/* 2. GALLERY OF VIDEOS (PLAYLIST CARDS) */}
         <div className="w-full">
           <div className="text-left mb-4 flex items-center justify-between">
             <h3 className="font-storybook text-2xl font-bold text-[#0e2b17] flex items-center gap-2">
-              <span>Daftar 4 Vidio Edukasi</span>
+              <span>
+                {categoryFilter === "animasi"
+                  ? "Koleksi Vidio Animasi"
+                  : categoryFilter === "bercerita"
+                  ? "Koleksi Vidio Bercerita"
+                  : "Daftar 4 Vidio Edukasi"}
+              </span>
             </h3>
             <span className="text-xs font-semibold text-[#2e7d32]">Pilih vidio untuk ditonton</span>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 text-left">
-            {videosData.map((v) => (
+            {filteredVideos.map((v) => (
               <div
                 key={v.id}
                 onClick={() => {

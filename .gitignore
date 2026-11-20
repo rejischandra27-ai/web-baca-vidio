@@ -36,3 +36,6 @@ public/assets/videos/mendongeng-rahasia-pohon-jambu.mp4
 
 
 .vercel
+
+*.py
+homepage.html

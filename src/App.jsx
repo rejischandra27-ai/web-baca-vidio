@@ -14,6 +14,7 @@ export default function App() {
   const [selectedBookId, setSelectedBookId] = useState("detektif-sampah");
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const [selectedVideoId, setSelectedVideoId] = useState("pantai");
+  const [videoCategory, setVideoCategory] = useState("all");
   const [isAppModalOpen, setIsAppModalOpen] = useState(false);
 
   const handleOpenBook = (bookId = "detektif-sampah") => {
@@ -26,13 +27,23 @@ export default function App() {
     setIsVideoModalOpen(true);
   };
 
+  const handleSelectVideoCategory = (category) => {
+    setVideoCategory(category);
+    if (category === "animasi") {
+      setSelectedVideoId("pantai");
+    } else if (category === "bercerita") {
+      setSelectedVideoId("rara-bimo");
+    }
+  };
+
   return (
     <div className="min-h-screen bg-[#f4f9f4] text-[#0e2b17] relative flex flex-col font-sans selection:bg-[#2e7d32] selection:text-white">
-      {/* FIXED NAVIGATION (Home, Buku, Vidio, Tentang Kami) */}
+      {/* FIXED NAVIGATION (Home, Buku, Vidio Animasi, Vidio Bercerita, Tentang Kami) */}
       <Navbar
         onOpenAppModal={() => setIsAppModalOpen(true)}
         onOpenStoryModal={() => handleOpenBook("detektif-sampah")}
         onOpenVideoModal={() => handleOpenVideo("pantai")}
+        onSelectVideoCategory={handleSelectVideoCategory}
       />
 
       {/* MAIN CONTENT SECTIONS */}
@@ -47,14 +58,16 @@ export default function App() {
           onSelectBook={(bookId) => handleOpenBook(bookId)}
         />
 
-        {/* 3. VIDIO SECTION: 4 Vidio Animasi & Praktik Aksi Hijau */}
+        {/* 3. VIDIO SECTION: Vidio Animasi & Vidio Bercerita */}
         <ActionSection
+          activeCategory={videoCategory}
+          onSelectCategory={setVideoCategory}
           onOpenVideoModal={(videoId) => handleOpenVideo(videoId || "pantai")}
         />
 
         {/* 4. TENTANG KAMI SECTION: Membaca Digital, Lestarikan Hutan */}
         <NightSection
-          onOpenStoryModal={() => handleOpenBook("rara-dan-bimo")}
+          onOpenStoryModal={(bookId) => handleOpenBook(bookId || "rara-dan-bimo")}
         />
       </main>
 
@@ -62,6 +75,7 @@ export default function App() {
       <Footer
         onOpenStoryModal={() => handleOpenBook("detektif-sampah")}
         onOpenVideoModal={() => handleOpenVideo("pantai")}
+        onSelectVideoCategory={handleSelectVideoCategory}
       />
 
       {/* INTERACTIVE MODALS */}

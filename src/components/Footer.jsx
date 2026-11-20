@@ -2,7 +2,7 @@ import React from 'react';
 import { Leaf } from 'lucide-react';
 import { soundFx } from '../utils/sound';
 
-export default function Footer({ onOpenStoryModal, onOpenVideoModal }) {
+export default function Footer({ onOpenStoryModal, onOpenVideoModal, onSelectVideoCategory }) {
   return (
     <footer className="relative pt-16 pb-12 px-6 bg-[#edf5ec] overflow-hidden text-center border-t border-[#d5ead3]">
       <div className="max-w-4xl mx-auto relative z-10 flex flex-col items-center">
@@ -28,8 +28,8 @@ export default function Footer({ onOpenStoryModal, onOpenVideoModal }) {
           Petualangan Kecil. Dampak Besar Bagi Kelestarian Bumi.
         </p>
 
-        {/* EXACT MENU: Home, Buku, Vidio, Tentang Kami */}
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-8 text-sm text-[#1b4d24] font-semibold">
+        {/* EXACT MENU: Home, Buku, Vidio Animasi, Vidio Bercerita, Tentang Kami */}
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-6 sm:gap-8 text-sm text-[#1b4d24] font-semibold">
           <a
             href="#home"
             className="hover:text-[#2e7d32] transition-colors"
@@ -50,10 +50,21 @@ export default function Footer({ onOpenStoryModal, onOpenVideoModal }) {
             href="#vidio"
             onClick={() => {
               soundFx.playChime(520);
+              if (onSelectVideoCategory) onSelectVideoCategory('animasi');
             }}
             className="hover:text-[#2e7d32] transition-colors"
           >
-            Vidio
+            Vidio Animasi
+          </a>
+          <a
+            href="#vidio"
+            onClick={() => {
+              soundFx.playChime(520);
+              if (onSelectVideoCategory) onSelectVideoCategory('bercerita');
+            }}
+            className="hover:text-[#2e7d32] transition-colors"
+          >
+            Vidio Bercerita
           </a>
           <a
             href="#tentang"

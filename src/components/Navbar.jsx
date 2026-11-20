@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Volume2, VolumeX, Menu, X, Leaf, Sparkles } from 'lucide-react';
 import { soundFx } from '../utils/sound';
 
-export default function Navbar({ onOpenAppModal, onOpenStoryModal, onOpenVideoModal }) {
+export default function Navbar({ onOpenAppModal, onOpenStoryModal, onOpenVideoModal, onSelectVideoCategory }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isAudioOn, setIsAudioOn] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -24,8 +24,21 @@ export default function Navbar({ onOpenAppModal, onOpenStoryModal, onOpenVideoMo
 
   const navLinks = [
     { name: 'Home', href: '#home' },
-    { name: 'Buku', href: '#buku', onClick: onOpenStoryModal },
-    { name: 'Vidio', href: '#vidio', onClick: onOpenVideoModal },
+    { name: 'Buku', href: '#buku' },
+    {
+      name: 'Vidio Animasi',
+      href: '#vidio',
+      action: () => {
+        if (onSelectVideoCategory) onSelectVideoCategory('animasi');
+      }
+    },
+    {
+      name: 'Vidio Bercerita',
+      href: '#vidio',
+      action: () => {
+        if (onSelectVideoCategory) onSelectVideoCategory('bercerita');
+      }
+    },
     { name: 'Tentang Kami', href: '#tentang' },
   ];
 
@@ -57,18 +70,23 @@ export default function Navbar({ onOpenAppModal, onOpenStoryModal, onOpenVideoMo
           </div>
         </a>
 
-        {/* DESKTOP MENU: Home, Buku, Vidio, Tentang Kami */}
-        <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-[#1b4d24]">
+        {/* DESKTOP MENU: Home, Buku, Vidio Animasi, Vidio Bercerita, Tentang Kami */}
+        <nav className="hidden md:flex items-center gap-6 lg:gap-8 text-sm font-semibold text-[#1b4d24]">
           {navLinks.map((item) => (
             <a
               key={item.name}
               href={item.href}
               onClick={(e) => {
-                if (item.onClick) {
-                  e.preventDefault();
-                  item.onClick();
-                }
                 soundFx.playChime(520);
+                if (item.action) {
+                  item.action();
+                }
+                const targetId = item.href.replace('#', '');
+                const targetEl = document.getElementById(targetId);
+                if (targetEl) {
+                  e.preventDefault();
+                  targetEl.scrollIntoView({ behavior: 'smooth' });
+                }
               }}
               className="hover:text-[#2e7d32] transition-colors duration-200 relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#2e7d32] hover:after:w-full after:transition-all after:duration-300"
             >
@@ -135,11 +153,16 @@ export default function Navbar({ onOpenAppModal, onOpenStoryModal, onOpenVideoMo
                 href={item.href}
                 onClick={(e) => {
                   setMobileMenuOpen(false);
-                  if (item.onClick) {
-                    e.preventDefault();
-                    item.onClick();
-                  }
                   soundFx.playChime(520);
+                  if (item.action) {
+                    item.action();
+                  }
+                  const targetId = item.href.replace('#', '');
+                  const targetEl = document.getElementById(targetId);
+                  if (targetEl) {
+                    e.preventDefault();
+                    targetEl.scrollIntoView({ behavior: 'smooth' });
+                  }
                 }}
                 className="py-1 hover:text-[#2e7d32]"
               >

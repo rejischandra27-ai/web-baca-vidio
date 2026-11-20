@@ -3,7 +3,7 @@
 ## 1. Identitas Proyek & Status Saat Ini
 - **Nama Proyek:** Echo Green (Web Cerita & Animasi Anak Ramah Lingkungan)
 - **Fase Saat Ini:** `BUILD` (4 Real Books & 4 Real Storytelling Videos Fully Integrated)
-- **Tujuan:** Mengembangkan landing page interaktif bertema **Echo Green** dengan menu canonical: **Home**, **Buku**, **Vidio**, **Tentang Kami**. Dilengkapi 4 buku cerita digital nyata dari pengguna:
+- **Tujuan:** Mengembangkan landing page interaktif bertema **Echo Green** dengan menu canonical: **Home**, **Buku**, **Vidio Animasi**, **Vidio Bercerita**, **Tentang Kami**. Dilengkapi 4 buku cerita digital nyata dari pengguna:
   1. *Detektif Cilik Pemilah Sampah* (Evi Noviyah, 16 Halaman)
   2. *Rara dan Bimo Sedih Karena Asap Pekat* (Ana Tri Rahayu, S.Pd., 19 Halaman)
   3. *Nail, Alifa, dan Rahasia Pohon Jambu* (Wilda Widya Panji Buwani, 16 Halaman)
@@ -20,7 +20,7 @@
 - `docs/DESIGN.md` : Panduan warna alam hijau segar, tipografi ramah anak, dan tata letak responsif.
 
 ## 3. Aturan Non-Negotiable
-- Menu wajib persis: `Home`, `Buku`, `Vidio`, `Tentang Kami`.
+- Menu wajib persis: `Home`, `Buku`, `Vidio Animasi`, `Vidio Bercerita`, `Tentang Kami`.
 - Visual bertema alam/lingkungan hijau (Eco Green).
 - Background menyatu bersih tanpa potongan gambar goyang.
 - Buku yang ditampilkan dan dapat dibaca adalah buku nyata dari pengguna di `public/assets/books/`.

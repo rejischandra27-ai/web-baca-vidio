@@ -90,6 +90,21 @@ export const videosData = [
     localSrc: "/assets/videos/jangan-buang-sampah-di-pantai.mp4"
   },
   {
+    id: "kali-kecil-bercerita",
+    judul: "Mendongeng: Kali Kecil, Sahabat Besar",
+    subjudul: "Praktik Mendongeng Sungai Bersih di Kelas TK Islam Al Falah",
+    pembuat: "Karya Ria Oktari Pamungkas",
+    kategori: "Praktik Mendongeng di Kelas",
+    tipe: "bercerita",
+    kategoriLabel: "Vidio Bercerita",
+    durasi: "10:08 Menit",
+    badge: "Praktik Kelas",
+    deskripsi: "Ibu Guru Ria membacakan buku 'Kali Kecil, Sahabat Besar' di hadapan anak-anak kelas B1 TK Islam Al Falah, mengedukasi pentingnya menjaga kebersihan sungai dekat sekolah dari sampah plastik agar air tetap jernih dan asri.",
+    poster: "/assets/videos/video-thumb-kali-kecil-bercerita.jpg",
+    src: "https://github.com/rejischandra27-ai/web-baca-vidio/releases/download/v1.0.0/mendongeng-kali-kecil.mp4",
+    localSrc: "/assets/videos/mendongeng-kali-kecil.mp4"
+  },
+  {
     id: "detektif",
     judul: "Implementasi Buku: Detektif Cilik Pemilah Sampah",
     subjudul: "Praktik Belajar Memilah Sampah Bersama Murid",

@@ -15,6 +15,21 @@ export const videosData = [
     localSrc: "/assets/videos/animasi-jaga-bumi-kita.mp4"
   },
   {
+    id: "animasi-rara-bimo",
+    judul: "Ayo-Ayo Jaga Hutan (Rara dan Bimo)",
+    subjudul: "Lagu Animasi Musik 3D Udara Bersih & Bermain Layang-Layang",
+    pembuat: "Karya Ana Tri Rahayu, S.Pd.",
+    kategori: "Lagu Animasi Musik 3D",
+    tipe: "animasi",
+    kategoriLabel: "Vidio Animasi",
+    durasi: "1:32 Menit",
+    badge: "Animasi 3D",
+    deskripsi: "Lagu animasi 3D ceria kisah Rara dan Bimo bermain layang-layang di langit biru yang bersih. Mengajak anak-anak mencintai alam: ayo jaga hutan, tanam pohon, jangan bakar hutan sembarangan agar udara tetap segar dan hati pun senang.",
+    poster: "/assets/videos/video-thumb-animasi-rara-bimo.jpg",
+    src: "https://github.com/rejischandra27-ai/web-baca-vidio/releases/download/v1.0.0/animasi-rara-dan-bimo.mp4",
+    localSrc: "/assets/videos/animasi-rara-dan-bimo.mp4"
+  },
+  {
     id: "animasi-detektif-sampah",
     judul: "Detektif Cilik Pemilah Sampah",
     subjudul: "Animasi Edukasi Memilah Sampah Bersama Aisyah, Bima & Nala",

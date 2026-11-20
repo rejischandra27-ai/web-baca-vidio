@@ -1,5 +1,20 @@
 export const videosData = [
   {
+    id: "ikan-kecil",
+    judul: "Ikan Kecil Riang",
+    subjudul: "Lagu Animasi Musik Sungai Jernih & Peduli Ikan",
+    pembuat: "Karya Effi Tugiarti, S.Pd",
+    kategori: "Lagu Animasi Musik 3D",
+    tipe: "animasi",
+    kategoriLabel: "Vidio Animasi",
+    durasi: "1:11 Menit",
+    badge: "Animasi 3D",
+    deskripsi: "Lagu animasi 3D ceria tentang ikan kecil berenang riang di sungai jernih, serta ajakan membuang sampah pada tempatnya agar perairan tetap bersih dan asri.",
+    poster: "/assets/videos/video-thumb-ikan-kecil.jpg",
+    src: "/assets/videos/ikan-kecil-riang.mp4",
+    localSrc: "/assets/videos/ikan-kecil-riang.mp4"
+  },
+  {
     id: "jaga-bumi",
     judul: "Jaga Bumi",
     subjudul: "Lagu Animasi Musik 3D Cinta Lingkungan",
@@ -73,5 +88,35 @@ export const videosData = [
     poster: "/assets/videos/video-thumb-pohon-jambu.jpg",
     src: "https://github.com/rejischandra27-ai/web-baca-vidio/releases/download/v1.0.0/mendongeng-rahasia-pohon-jambu.mp4",
     localSrc: "/assets/videos/mendongeng-rahasia-pohon-jambu.mp4"
+  },
+  {
+    id: "baim-rani-video",
+    judul: "Mendongeng: Baim dan Rani Sedih Melihat Ikan Kecil",
+    subjudul: "Praktik Mendongeng Sungai Bersih Bersama Murid TK",
+    pembuat: "Karya Effi Tugiarti, S.Pd",
+    kategori: "Mendongeng TK Islam",
+    tipe: "bercerita",
+    kategoriLabel: "Vidio Bercerita",
+    durasi: "6:19 Menit",
+    badge: "Mendongeng Kelas",
+    deskripsi: "Ibu Guru Effi membacakan buku cerita 'Baim dan Rani' di depan anak-anak di kelas, menanamkan nilai moral menjaga kebersihan air dan menyayangi satwa sungai.",
+    poster: "/assets/videos/video-thumb-baim-rani.jpg",
+    src: "https://github.com/rejischandra27-ai/web-baca-vidio/releases/download/v1.0.0/mendongeng-baim-dan-rani.mp4",
+    localSrc: "/assets/videos/mendongeng-baim-dan-rani.mp4"
+  },
+  {
+    id: "kiki-pantai-video",
+    judul: "Mendongeng: Jejak Kaki Kiki di Tepi Pantai",
+    subjudul: "Kegiatan Mendongeng di Bawah Pohon Rindang RA Ash-Shafa",
+    pembuat: "Karya Hartati",
+    kategori: "Mendongeng RA Ash-Shafa",
+    tipe: "bercerita",
+    kategoriLabel: "Vidio Bercerita",
+    durasi: "10:26 Menit",
+    badge: "Mendongeng Outdoor",
+    deskripsi: "Ibu Hartati mendongeng buku 'Jejak Kaki Kiki di Tepi Pantai' bersama murid-murid berbusana tradisional di RA Ash-Shafa, mengedukasi bahaya sampah plastik bagi laut.",
+    poster: "/assets/videos/video-thumb-kiki-pantai.jpg",
+    src: "https://github.com/rejischandra27-ai/web-baca-vidio/releases/download/v1.0.0/mendongeng-jejak-kaki-kiki.mp4",
+    localSrc: "/assets/videos/mendongeng-jejak-kaki-kiki.mp4"
   }
 ];

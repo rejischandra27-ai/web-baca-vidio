@@ -10,14 +10,17 @@
   4. *Kali Kecil, Sahabat Besar* (Ria Oktari Pamungkas, 15 Halaman)
   5. *Baim dan Rani Sedih Melihat Ikan Kecil* (Effi Tugiarti, S.Pd, 19 Halaman)
   6. *Jejak Kaki Kiki di Tepi Pantai* (Hartati, 19 Halaman)
-  Serta galeri 5 video edukasi anak asli dari pengguna:
-  - **Vidio Animasi (2 Video):**
-    1. *Jaga Bumi* (Karya Wilda Widya Panji Buwani, Animasi 3D 1:37)
-    2. *Jangan Buang Sampah di Pantai* (Karya Hartati, Animasi Musik 1:55)
-  - **Vidio Bercerita (3 Video):**
-    3. *Implementasi Detektif Cilik Pemilah Sampah* (Karya Evi Noviyah, Praktik Kelas 4:45)
-    4. *Mendongeng Rara dan Bimo Sedih* (Karya Ana Tri Rahayu, S.Pd., Gazebo 8:16)
-    5. *Mendongeng Nail, Alifa, dan Rahasia Pohon Jambu* (Karya Ibu Wilda, TK Putra Pertiwi 12:58)
+  Serta galeri 8 video edukasi anak asli dari pengguna:
+  - **Vidio Animasi (3 Video):**
+    1. *Ikan Kecil Riang* (Karya Effi Tugiarti, S.Pd, Animasi 3D 1:11)
+    2. *Jaga Bumi* (Karya Wilda Widya Panji Buwani, Animasi 3D 1:37)
+    3. *Jangan Buang Sampah di Pantai* (Karya Hartati, Animasi Musik 1:55)
+  - **Vidio Bercerita (5 Video):**
+    4. *Implementasi Detektif Cilik Pemilah Sampah* (Karya Evi Noviyah, Praktik Kelas 4:45)
+    5. *Mendongeng Rara dan Bimo Sedih* (Karya Ana Tri Rahayu, S.Pd., Gazebo 8:16)
+    6. *Mendongeng Nail, Alifa, dan Rahasia Pohon Jambu* (Karya Ibu Wilda, TK Putra Pertiwi 12:58)
+    7. *Mendongeng Baim dan Rani Sedih Melihat Ikan Kecil* (Karya Effi Tugiarti, S.Pd, TK Islam 6:19)
+    8. *Mendongeng Jejak Kaki Kiki di Tepi Pantai* (Karya Hartati, RA Ash-Shafa 10:26)
   Dilengkapi mockup tablet interaktif dan modal pemutar video dengan switcher playlist.
 
 ## 2. Peta Dokumen & Tanggung Jawab Subjek

@@ -65,9 +65,10 @@ export default function App() {
           onOpenVideoModal={(videoId) => handleOpenVideo(videoId || "pantai")}
         />
 
-        {/* 4. TENTANG KAMI SECTION: Membaca Digital, Lestarikan Hutan */}
+        {/* 4. TENTANG KAMI SECTION: Membaca Digital, Lestarikan Hutan & Profil Tim */}
         <NightSection
           onOpenStoryModal={(bookId) => handleOpenBook(bookId || "rara-dan-bimo")}
+          onOpenVideoModal={(videoId) => handleOpenVideo(videoId || "pantai")}
         />
       </main>
 

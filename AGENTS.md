@@ -2,15 +2,15 @@
 
 ## 1. Identitas Proyek & Status Saat Ini
 - **Nama Proyek:** Echo Green (Web Cerita & Animasi Anak Ramah Lingkungan)
-- **Fase Saat Ini:** `BUILD` (7 Real Books & 5 Real Eco Videos Fully Integrated)
-- **Tujuan:** Mengembangkan landing page interaktif bertema **Echo Green** dengan menu canonical: **Home**, **Buku**, **Vidio Animasi**, **Vidio Bercerita**, **Tentang Kami**. Dilengkapi 7 buku cerita digital nyata dari pengguna:
-  1. *Detektif Cilik Pemilah Sampah* (Evi Noviyah, 16 Halaman)
-  2. *Rara dan Bimo Sedih Karena Asap Pekat* (Ana Tri Rahayu, S.Pd., 19 Halaman)
-  3. *Nail, Alifa, dan Rahasia Pohon Jambu* (Wilda Widya Panji Buwani, 16 Halaman)
-  4. *Kali Kecil, Sahabat Besar* (Ria Oktari Pamungkas, 15 Halaman)
-  5. *Baim dan Rani Sedih Melihat Ikan Kecil* (Effi Tugiarti, S.Pd, 19 Halaman)
-  6. *Jejak Kaki Kiki di Tepi Pantai* (Hartati, 19 Halaman)
-  7. *Bumi Sedang Kepanasan* (Yanike Martinawaty, S.Pd, 14 Halaman)
+- **Fase Saat Ini:** `BUILD` (7 Real Books, 13 Real Eco Videos & 7 Member Profiles Integrated)
+- **Tujuan:** Mengembangkan landing page interaktif bertema **Echo Green** dengan menu canonical: **Home**, **Buku**, **Vidio Animasi**, **Vidio Bercerita**, **Tentang Kami**. Dilengkapi profil 7 anggota kelompok / pendidik PAUD beserta etalase karya nyata:
+  1. *Evi Noviyah, S.Pd.* (Buku *Detektif Cilik Pemilah Sampah*, Animasi 2D & Praktik Kelas)
+  2. *Ana Tri Rahayu, S.Pd.* (Buku *Rara dan Bimo Sedih Karena Asap Pekat*, Animasi 3D & Gazebo)
+  3. *Wilda Widya Panji Buwani, S.Pd.* (Buku *Nail, Alifa, & Rahasia Pohon Jambu*, Animasi 3D & Mendongeng)
+  4. *Ria Oktari Pamungkas, S.Pd.* (Buku *Kali Kecil, Sahabat Besar*, Animasi Cerita & Mendongeng TK Islam Al Falah)
+  5. *Effi Tugiarti, S.Pd.* (Buku *Baim dan Rani Sedih Melihat Ikan Kecil*, Animasi 3D & Mendongeng)
+  6. *Hartati, S.Kom.* (Buku *Jejak Kaki Kiki di Tepi Pantai*, Animasi Musik & Mendongeng RA Ash-Shafa)
+  7. *Yanike Martinawaty, S.Pd.* (Buku *Bumi Sedang Kepanasan*, Animasi 3D Jaga Bumi Kita - NIM 4862560113)
   Serta galeri 13 video edukasi anak asli dari pengguna:
   - **Vidio Animasi (7 Video):**
     1. *Jaga Bumi Kita* (Karya Yanike Martinawaty, S.Pd, Animasi 3D 0:58)

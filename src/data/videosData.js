@@ -1,5 +1,20 @@
 export const videosData = [
   {
+    id: "kali-kecil-animasi",
+    judul: "Kali Kecil Sahabat Besar",
+    subjudul: "Animasi Cerita Sungai Bersih Sahabat Anak",
+    pembuat: "Karya Ria Oktari Pamungkas",
+    kategori: "Animasi Cerita Anak",
+    tipe: "animasi",
+    kategoriLabel: "Vidio Animasi",
+    durasi: "2:05 Menit",
+    badge: "Animasi Cerita",
+    deskripsi: "Animasi edukatif yang menceritakan keasrian sungai dekat sekolah TK Islam Al Falah, mengajak anak-anak mencintai lingkungan perairan dan menjaga aliran kali tetap jernih.",
+    poster: "/assets/videos/video-thumb-kali-kecil.jpg",
+    src: "https://github.com/rejischandra27-ai/web-baca-vidio/releases/download/v1.0.0/animasi-kali-kecil.mp4",
+    localSrc: "/assets/videos/animasi-kali-kecil.mp4"
+  },
+  {
     id: "ikan-kecil",
     judul: "Ikan Kecil Riang",
     subjudul: "Lagu Animasi Musik Sungai Jernih & Peduli Ikan",
@@ -61,15 +76,16 @@ export const videosData = [
   },
   {
     id: "rara-bimo",
-    judul: "Mendongeng: Rara dan Bimo Sedih Karena Asap Pekat",
+    judul: "Mendongeng & Animasi: Rara dan Bimo Sedih",
     subjudul: "Cerita Edukasi Udara Bersih & Cegah Karhutla",
     pembuat: "Karya Ana Tri Rahayu, S.Pd.",
-    kategori: "Kegiatan Mendongeng",
-    tipe: "bercerita",
-    kategoriLabel: "Vidio Bercerita",
+    kategori: "Animasi & Kegiatan Mendongeng",
+    tipe: "animasi",
+    tipe2: "bercerita",
+    kategoriLabel: "Vidio Animasi & Bercerita",
     durasi: "8:16 Menit",
-    badge: "Mendongeng Gazebo",
-    deskripsi: "Ibu Guru Ana mendongeng hangat bersama anak-anak di gazebo sekolah, menyampaikan pesan pentingnya menjaga hutan agar terhindar dari kebakaran dan polusi asap.",
+    badge: "Animasi & Cerita",
+    deskripsi: "Dibuka dengan animasi cerita Rara dan Bimo bermain layang-layang, dilanjutkan mendongeng interaktif di gazebo sekolah tentang pentingnya menjaga hutan agar terhindar dari kebakaran asap.",
     poster: "/assets/videos/video-thumb-rara-bimo.jpg",
     src: "https://github.com/rejischandra27-ai/web-baca-vidio/releases/download/v1.0.0/mendongeng-rara-dan-bimo.mp4",
     localSrc: "/assets/videos/mendongeng-rara-dan-bimo.mp4"

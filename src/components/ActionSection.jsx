@@ -24,7 +24,7 @@ export default function ActionSection({ onOpenVideoModal, activeCategory = "all"
       onSelectCategory(cat);
     }
     if (cat === "animasi") {
-      setSelectedVideoId("jaga-bumi");
+      setSelectedVideoId("kali-kecil-animasi");
     } else if (cat === "bercerita") {
       setSelectedVideoId("rara-bimo");
     }
@@ -32,7 +32,7 @@ export default function ActionSection({ onOpenVideoModal, activeCategory = "all"
 
   const filteredVideos = categoryFilter === "all"
     ? videosData
-    : videosData.filter(v => v.tipe === categoryFilter);
+    : videosData.filter(v => v.tipe === categoryFilter || v.tipe2 === categoryFilter);
 
   const activeVideo = videosData.find(v => v.id === selectedVideoId) || filteredVideos[0] || videosData[0];
 
@@ -99,7 +99,7 @@ export default function ActionSection({ onOpenVideoModal, activeCategory = "all"
                   : 'text-[#1b4d24] hover:bg-[#2e7d32]/10'
               }`}
             >
-              <Film size={14} /> Vidio Animasi ({videosData.filter(v => v.tipe === 'animasi').length})
+              <Film size={14} /> Vidio Animasi ({videosData.filter(v => v.tipe === 'animasi' || v.tipe2 === 'animasi').length})
             </button>
 
             <button
@@ -110,7 +110,7 @@ export default function ActionSection({ onOpenVideoModal, activeCategory = "all"
                   : 'text-[#1b4d24] hover:bg-[#2e7d32]/10'
               }`}
             >
-              <BookOpen size={14} /> Vidio Bercerita ({videosData.filter(v => v.tipe === 'bercerita').length})
+              <BookOpen size={14} /> Vidio Bercerita ({videosData.filter(v => v.tipe === 'bercerita' || v.tipe2 === 'bercerita').length})
             </button>
           </div>
         </motion.div>

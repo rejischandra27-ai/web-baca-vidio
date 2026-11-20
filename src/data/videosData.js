@@ -1,5 +1,20 @@
 export const videosData = [
   {
+    id: "jaga-bumi",
+    judul: "Jaga Bumi",
+    subjudul: "Lagu Animasi Musik 3D Cinta Lingkungan",
+    pembuat: "Karya Wilda Widya Panji Buwani",
+    kategori: "Lagu Animasi 3D",
+    tipe: "animasi",
+    kategoriLabel: "Vidio Animasi",
+    durasi: "1:37 Menit",
+    badge: "Animasi 3D",
+    deskripsi: "Lagu animasi 3D edukatif ceria yang mengajak anak-anak membawa botol minum sendiri (tumbler), mengurangi sampah plastik, dan menjaga keindahan bumi sejak dini.",
+    poster: "/assets/videos/video-thumb-jaga-bumi.jpg",
+    src: "/assets/videos/animasi-jaga-bumi.mp4",
+    localSrc: "/assets/videos/animasi-jaga-bumi.mp4"
+  },
+  {
     id: "pantai",
     judul: "Jangan Buang Sampah di Pantai",
     subjudul: "Lagu Animasi Lagu Anak Ramah Lingkungan",

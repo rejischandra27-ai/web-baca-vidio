@@ -74,14 +74,14 @@ export default function VideoModal({ isOpen, onClose, initialVideoId = "pantai" 
                   onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                   className="px-3 py-1.5 rounded-full bg-[#1b4332] hover:bg-[#2d6a4f] text-white text-xs font-semibold flex items-center gap-1.5 border border-[#81c784]/40 transition-all cursor-pointer shadow-sm"
                 >
-                  <span>Pilih Vidio ({videosData.findIndex(v => v.id === activeVideoId) + 1}/4)</span>
+                  <span>Pilih Vidio ({videosData.findIndex(v => v.id === activeVideoId) + 1}/{videosData.length})</span>
                   <ChevronDown size={14} className={`transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`} />
                 </button>
 
                 {isDropdownOpen && (
                   <div className="absolute right-0 top-full mt-1.5 w-64 sm:w-72 bg-[#0c2414] border border-[#81c784]/40 rounded-2xl shadow-2xl overflow-hidden z-30 p-1.5">
                     <div className="text-[10px] font-bold uppercase tracking-wider text-[#81c784] px-3 py-1.5 border-b border-white/10">
-                      Koleksi Vidio Edukasi (4 Vidio)
+                      Koleksi Vidio Edukasi ({videosData.length} Vidio)
                     </div>
                     {videosData.map((v) => (
                       <button

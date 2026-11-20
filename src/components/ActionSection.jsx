@@ -5,13 +5,13 @@ import { soundFx } from '../utils/sound';
 import { videosData } from '../data/videosData';
 
 export default function ActionSection({ onOpenVideoModal, activeCategory = "all", onSelectCategory }) {
-  const [selectedVideoId, setSelectedVideoId] = useState("pantai");
+  const [selectedVideoId, setSelectedVideoId] = useState("jaga-bumi");
   const [categoryFilter, setCategoryFilter] = useState(activeCategory);
 
   useEffect(() => {
     setCategoryFilter(activeCategory);
     if (activeCategory === "animasi") {
-      setSelectedVideoId("pantai");
+      setSelectedVideoId("jaga-bumi");
     } else if (activeCategory === "bercerita") {
       setSelectedVideoId("rara-bimo");
     }
@@ -24,7 +24,7 @@ export default function ActionSection({ onOpenVideoModal, activeCategory = "all"
       onSelectCategory(cat);
     }
     if (cat === "animasi") {
-      setSelectedVideoId("pantai");
+      setSelectedVideoId("jaga-bumi");
     } else if (cat === "bercerita") {
       setSelectedVideoId("rara-bimo");
     }
@@ -99,7 +99,7 @@ export default function ActionSection({ onOpenVideoModal, activeCategory = "all"
                   : 'text-[#1b4d24] hover:bg-[#2e7d32]/10'
               }`}
             >
-              <Film size={14} /> Vidio Animasi (1)
+              <Film size={14} /> Vidio Animasi ({videosData.filter(v => v.tipe === 'animasi').length})
             </button>
 
             <button
@@ -110,7 +110,7 @@ export default function ActionSection({ onOpenVideoModal, activeCategory = "all"
                   : 'text-[#1b4d24] hover:bg-[#2e7d32]/10'
               }`}
             >
-              <BookOpen size={14} /> Vidio Bercerita (3)
+              <BookOpen size={14} /> Vidio Bercerita ({videosData.filter(v => v.tipe === 'bercerita').length})
             </button>
           </div>
         </motion.div>
@@ -192,13 +192,13 @@ export default function ActionSection({ onOpenVideoModal, activeCategory = "all"
                   ? "Koleksi Vidio Animasi"
                   : categoryFilter === "bercerita"
                   ? "Koleksi Vidio Bercerita"
-                  : "Daftar 4 Vidio Edukasi"}
+                  : `Daftar ${videosData.length} Vidio Edukasi`}
               </span>
             </h3>
             <span className="text-xs font-semibold text-[#2e7d32]">Pilih vidio untuk ditonton</span>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 text-left">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 text-left">
             {filteredVideos.map((v) => (
               <div
                 key={v.id}

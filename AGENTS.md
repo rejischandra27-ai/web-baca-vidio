@@ -2,17 +2,20 @@
 
 ## 1. Identitas Proyek & Status Saat Ini
 - **Nama Proyek:** Echo Green (Web Cerita & Animasi Anak Ramah Lingkungan)
-- **Fase Saat Ini:** `BUILD` (4 Real Books & 4 Real Storytelling Videos Fully Integrated)
+- **Fase Saat Ini:** `BUILD` (4 Real Books & 5 Real Eco Videos Fully Integrated)
 - **Tujuan:** Mengembangkan landing page interaktif bertema **Echo Green** dengan menu canonical: **Home**, **Buku**, **Vidio Animasi**, **Vidio Bercerita**, **Tentang Kami**. Dilengkapi 4 buku cerita digital nyata dari pengguna:
   1. *Detektif Cilik Pemilah Sampah* (Evi Noviyah, 16 Halaman)
   2. *Rara dan Bimo Sedih Karena Asap Pekat* (Ana Tri Rahayu, S.Pd., 19 Halaman)
   3. *Nail, Alifa, dan Rahasia Pohon Jambu* (Wilda Widya Panji Buwani, 16 Halaman)
   4. *Kali Kecil, Sahabat Besar* (Ria Oktari Pamungkas, 15 Halaman)
-  Serta galeri 4 video edukasi anak asli dari pengguna:
-  1. *Jangan Buang Sampah di Pantai* (Karya Hartati, Animasi Musik 1:55)
-  2. *Implementasi Detektif Cilik Pemilah Sampah* (Karya Evi Noviyah, Praktik Kelas 4:45)
-  3. *Mendongeng Rara dan Bimo Sedih* (Karya Ana Tri Rahayu, S.Pd., Gazebo 8:16)
-  4. *Mendongeng Nail, Alifa, dan Rahasia Pohon Jambu* (Karya Ibu Wilda, TK Putra Pertiwi 12:58)
+  Serta galeri 5 video edukasi anak asli dari pengguna:
+  - **Vidio Animasi (2 Video):**
+    1. *Jaga Bumi* (Karya Wilda Widya Panji Buwani, Animasi 3D 1:37)
+    2. *Jangan Buang Sampah di Pantai* (Karya Hartati, Animasi Musik 1:55)
+  - **Vidio Bercerita (3 Video):**
+    3. *Implementasi Detektif Cilik Pemilah Sampah* (Karya Evi Noviyah, Praktik Kelas 4:45)
+    4. *Mendongeng Rara dan Bimo Sedih* (Karya Ana Tri Rahayu, S.Pd., Gazebo 8:16)
+    5. *Mendongeng Nail, Alifa, dan Rahasia Pohon Jambu* (Karya Ibu Wilda, TK Putra Pertiwi 12:58)
   Dilengkapi mockup tablet interaktif dan modal pemutar video dengan switcher playlist.
 
 ## 2. Peta Dokumen & Tanggung Jawab Subjek

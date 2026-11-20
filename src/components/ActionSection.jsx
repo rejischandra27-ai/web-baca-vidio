@@ -11,7 +11,7 @@ export default function ActionSection({ onOpenVideoModal, activeCategory = "all"
   useEffect(() => {
     setCategoryFilter(activeCategory);
     if (activeCategory === "animasi") {
-      setSelectedVideoId("jaga-bumi");
+      setSelectedVideoId("animasi-detektif-sampah");
     } else if (activeCategory === "bercerita") {
       setSelectedVideoId("rara-bimo");
     }
@@ -24,7 +24,7 @@ export default function ActionSection({ onOpenVideoModal, activeCategory = "all"
       onSelectCategory(cat);
     }
     if (cat === "animasi") {
-      setSelectedVideoId("kali-kecil-animasi");
+      setSelectedVideoId("animasi-detektif-sampah");
     } else if (cat === "bercerita") {
       setSelectedVideoId("rara-bimo");
     }

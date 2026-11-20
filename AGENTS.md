@@ -12,19 +12,18 @@
   6. *Jejak Kaki Kiki di Tepi Pantai* (Hartati, 19 Halaman)
   7. *Bumi Sedang Kepanasan* (Yanike Martinawaty, S.Pd, 14 Halaman)
   Serta galeri 10 video edukasi anak asli dari pengguna:
-  - **Vidio Animasi (6 Video):**
+  - **Vidio Animasi (5 Video):**
     1. *Detektif Cilik Pemilah Sampah* (Karya Evi Noviyah, S.Pd., Animasi 2D 2:20)
     2. *Kali Kecil Sahabat Besar* (Karya Ria Oktari Pamungkas, Animasi Cerita 2:05)
-    3. *Mendongeng & Animasi: Rara dan Bimo Sedih* (Karya Ana Tri Rahayu, S.Pd., Animasi & Dongeng 8:16)
-    4. *Ikan Kecil Riang* (Karya Effi Tugiarti, S.Pd, Animasi 3D 1:11)
-    5. *Jaga Bumi* (Karya Wilda Widya Panji Buwani, Animasi 3D 1:37)
-    6. *Jangan Buang Sampah di Pantai* (Karya Hartati, Animasi Musik 1:55)
+    3. *Ikan Kecil Riang* (Karya Effi Tugiarti, S.Pd, Animasi 3D 1:11)
+    4. *Jaga Bumi* (Karya Wilda Widya Panji Buwani, Animasi 3D 1:37)
+    5. *Jangan Buang Sampah di Pantai* (Karya Hartati, Animasi Musik 1:55)
   - **Vidio Bercerita (5 Video):**
-    5. *Implementasi Detektif Cilik Pemilah Sampah* (Karya Evi Noviyah, Praktik Kelas 4:45)
-    6. *Mendongeng & Animasi: Rara dan Bimo Sedih* (Karya Ana Tri Rahayu, S.Pd., Gazebo 8:16)
-    7. *Mendongeng Nail, Alifa, dan Rahasia Pohon Jambu* (Karya Ibu Wilda, TK Putra Pertiwi 12:58)
-    8. *Mendongeng Baim dan Rani Sedih Melihat Ikan Kecil* (Karya Effi Tugiarti, S.Pd, TK Islam 6:19)
-    9. *Mendongeng Jejak Kaki Kiki di Tepi Pantai* (Karya Hartati, RA Ash-Shafa 10:26)
+    1. *Implementasi Detektif Cilik Pemilah Sampah* (Karya Evi Noviyah, Praktik Kelas 4:45)
+    2. *Mendongeng: Rara dan Bimo Sedih* (Karya Ana Tri Rahayu, S.Pd., Gazebo 8:16)
+    3. *Mendongeng Nail, Alifa, dan Rahasia Pohon Jambu* (Karya Ibu Wilda, TK Putra Pertiwi 12:58)
+    4. *Mendongeng Baim dan Rani Sedih Melihat Ikan Kecil* (Karya Effi Tugiarti, S.Pd, TK Islam 6:19)
+    5. *Mendongeng Jejak Kaki Kiki di Tepi Pantai* (Karya Hartati, RA Ash-Shafa 10:26)
   Dilengkapi mockup tablet interaktif dan modal pemutar video dengan switcher playlist.
 
 ## 2. Peta Dokumen & Tanggung Jawab Subjek

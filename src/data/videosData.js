@@ -193,5 +193,20 @@ export const videosData = [
     poster: "/assets/videos/video-thumb-kiki-pantai.jpg",
     src: "https://github.com/rejischandra27-ai/web-baca-vidio/releases/download/v1.0.0/mendongeng-jejak-kaki-kiki.mp4",
     localSrc: "/assets/videos/mendongeng-jejak-kaki-kiki.mp4"
+  },
+  {
+    id: "bumi-kepanasan-bercerita",
+    judul: "Bercerita & Bernyanyi: Bumi Sedang Kepanasan",
+    subjudul: "Praktik Bercerita & Bernyanyi Bersama PAUD Ummi Greged",
+    pembuat: "Karya Yanike Martinawaty, S.Pd",
+    kategori: "Bercerita PAUD Ummi Greged",
+    tipe: "bercerita",
+    kategoriLabel: "Vidio Bercerita",
+    durasi: "5:31 Menit",
+    badge: "Praktik Kelas",
+    deskripsi: "Ibu Yanike Martinawaty bercerita interaktif kisah 'Bumi Sedang Kepanasan' bersama murid-murid PAUD Ummi Greged, dilanjutkan bernyanyi lagu edukasi bersama mengajak anak mencintai lingkungan, menanam pohon, dan hemat energi.",
+    poster: "/assets/videos/video-thumb-bumi-kepanasan-bercerita.jpg",
+    src: "https://github.com/rejischandra27-ai/web-baca-vidio/releases/download/v1.0.0/bercerita-bumi-sedang-kepanasan.mp4",
+    localSrc: "/assets/videos/bercerita-bumi-sedang-kepanasan.mp4"
   }
 ];

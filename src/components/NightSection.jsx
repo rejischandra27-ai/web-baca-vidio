@@ -107,8 +107,8 @@ export default function NightSection({ onOpenStoryModal, onOpenVideoModal }) {
       bukuJudul: "Bumi Sedang Kepanasan",
       bukuHal: "14 Halaman",
       bookId: "bumi-kepanasan",
-      vidioJudul: "Lagu Animasi 3D Jaga Bumi Kita",
-      videoId: "jaga-bumi-kita"
+      vidioJudul: "Animasi 3D & Dongeng Kelas",
+      videoId: "bumi-kepanasan-bercerita"
     }
   ];
 
@@ -203,7 +203,7 @@ export default function NightSection({ onOpenStoryModal, onOpenVideoModal }) {
             </h2>
 
             <p className="mt-4 text-base sm:text-lg text-[#c8e6c9] font-normal max-w-md leading-relaxed">
-              Platform <b>Echo Green</b> mengusung misi literasi hijau tanpa kertas (<i>paperless</i>), menghadirkan 7 buku cerita digital dan 13 vidio edukasi bernilai ekologis karya pendidik PAUD.
+              Platform <b>Echo Green</b> mengusung misi literasi hijau tanpa kertas (<i>paperless</i>), menghadirkan 7 buku cerita digital dan 14 vidio edukasi bernilai ekologis karya pendidik PAUD.
             </p>
 
             {/* 2 Pillars */}
